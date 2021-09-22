@@ -8548,6 +8548,10 @@ button {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
 }
+.top-nav__link svg {
+  width: 1rem;
+  height: 1rem;
+}
 .top-nav__link span {
   margin-left: 0.2rem;
 }
@@ -8603,6 +8607,10 @@ button {
 }
 .main-nav__item:last-child span {
   margin-right: 0.25rem;
+}
+.main-nav__item:last-child svg {
+  width: 8px;
+  height: 8px;
 }
 @media (min-width: 992px) {
   .main-nav__item:last-child {
@@ -8813,18 +8821,12 @@ button {
   border-color: #fff;
   width: 100%;
 }
-@media (min-width: 992px) {
-  .track__button {
-    display: initial;
-  }
+.track__button svg {
+  width: 14px;
+  height: 14px;
 }
 .track__button span {
   margin-left: 0.25rem;
-}
-@media (min-width: 992px) {
-  .track__button span {
-    margin-left: 0;
-  }
 }
 @media (min-width: 1200px) {
   .track__info {
@@ -8838,6 +8840,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.track__header-info svg {
+  width: 25px;
+  height: 25px;
 }
 @media (min-width: 1200px) {
   .track__header-info {
@@ -8882,6 +8888,10 @@ button {
 }
 .track__label-status strong {
   margin-left: 0.25rem;
+}
+.track__label-status svg {
+  width: 12px;
+  height: 12px;
 }
 
 .feedback {
@@ -8943,6 +8953,10 @@ button {
   font-size: 13px;
   background: linear-gradient(90deg, #2d348a 0%, #315eaa 36.67%, #3471b8 73.59%, #359fd8 100%);
   color: #fff;
+}
+.feedback__submit button svg {
+  width: 14px;
+  height: 14px;
 }
 .feedback__submit button span {
   margin-left: 0.25rem;
@@ -9020,6 +9034,10 @@ button {
   top: 50%;
   display: none;
 }
+.slideshow__arrow svg {
+  width: 44px;
+  height: 14px;
+}
 @media (min-width: 1200px) {
   .slideshow__arrow {
     display: block;
@@ -9048,6 +9066,9 @@ button {
   font-size: 1.75rem;
   margin-left: 0.5rem;
 }
+.contact__header svg {
+  width: 26px;
+}
 .contact__content {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -9061,6 +9082,9 @@ button {
 }
 .contact__support {
   margin-bottom: 1rem;
+}
+.contact__support svg {
+  height: 12px;
 }
 @media (min-width: 1200px) {
   .contact__support {
@@ -9099,6 +9123,12 @@ button {
   background: linear-gradient(90deg, #2d348a 0%, #315eaa 36.67%, #3471b8 73.59%, #359fd8 100%);
   color: #fff;
   margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.contact__button svg {
+  width: 14px;
+  height: 14px;
 }
 .contact__button span {
   margin-left: 0.25rem;
