@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=F, initial-scale=1.0">
+    <title>Exchange</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <nav class="top-nav">
+                <a href="#" class="top-nav__link">
+                    <img src="images/create-account.png" alt="">
+                    <span>Create Account</span>
+                </a>
+                <a href="#" class="top-nav__link">
+                    <img src="images/login.png" alt="">
+                    <span>Login</span>
+                </a>
+            </nav>
+        </div>
+        <div class="header__main">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <nav class="main-nav">
+                <label for="nav-mobile" class="main-nav__toggle">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                </label>
+                <input type="checkbox" id="nav-mobile" class="main-nav__checkbox" hidden>
+                <label for="nav-mobile" class="main-nav__overlay"></label>
+                <ul class="main-nav__list">
+                    <label for="nav-mobile" class="main-nav__close">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                    </label>
+                    <li class="main-nav__item">
+                        <a href="exchange.html">Exchange</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">About us</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Tracking</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Policies</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Contact us</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">
+                            <span>EN</span>
+                            <img src="images/sort-down.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="exchange">
+        <div class="exchange__grid">
+            <div class="exchange__item exchange__item--form">
+                <div class="exchange__card exchange__card--form">
+                    <span class="exchange__form-title">Exchange skrill USD to Paytm INR</span>
+                    <form action="" class="exchange__form">
+                        <span class="exchange__form-heading">You will send to us</span>
+                        <div class="exchange__group">
+                            <div>
+                                <img src="images/skirll2.png" alt="">
+                            </div>
+                            <div class="exchange__form-group">
+                                <label for="">The amount you need to exchange</label>
+                                <input type="text" placeholder="Example: 100">
+                                <div class="exchange__form-help">
+                                    <span>Exchange rate: 1 USD = 71 INR</span>
+                                    <div class="exchange__form-amount">
+                                        <span>Minimal amount: 75 USD</span>
+                                        <span>Maximum amount: 20000 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="exchange__form-heading">We will send to you</span>
+                        <div class="exchange__group">
+                            <div>
+                                <img src="images/paytm2.png" alt="">
+                            </div>
+                            <div class="exchange__form-group">
+                                <label for="">The amount you need to exchange</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <span class="exchange__form-heading">We require from you</span>
+                        <div class="exchange__group exchange__group--info">
+                            <label for="">Your Change email address</label>
+                            <input type="text">
+                        </div>
+                        <div class="exchange__group exchange__group--info">
+                            <label for="">Your Paytm email address</label>
+                            <input type="text">
+                        </div>
+                        <div class="exchange__group exchange__group--info">
+                            <label for="">Your Paytm mobile number</label>
+                            <input type="text">
+                        </div>
+                        <div class="exchange__recaptcha">
+                            <div class="g-recaptcha" data-sitekey="6LdEAYIcAAAAAN2r9_gQaQr0Md7AZ8Rzq3YaCGVJ"></div>
+                        </div>
+                        <div class="exchange__submit">
+                            <button>EXCHANGE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="exchange__item exchange__item--guild">
+                <div class="exchange__card exchange__card--guild">
+                    <span>How to exchange?</span>
+                    <ol class="exchange__guild">
+                        <li>Enter the amount in "Send" section.</li>
+                        <li>Fill all the fields required by us.</li>
+                        <li>Press "Exchange" button </li>
+                        <li>Make the payment.</li>
+                        <li>When the payment is confirmed we will process your exchange.</li>
+                    </ol>
+                    <span>If you need help please <a href="">contact us</a>.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>COPYRIGHT © 2021 TFAST.COM.VN - ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

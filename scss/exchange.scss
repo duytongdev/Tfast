@@ -1,0 +1,141 @@
+.exchange {
+    @extend .container;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+
+    &__grid {
+        @extend .row;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    &__item {
+        &--form {
+            @extend .col-lg-8;
+            margin-bottom: 1rem;
+        }
+
+        &--guild {
+            @extend .col-lg-4;
+
+            a {
+                color: #29255e;
+            }
+        }
+    }
+
+    &__card {
+        box-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
+        padding: 2rem 0;
+        border-radius: .375rem;
+
+        &--form {
+            @include media-breakpoint-up(md) {
+                padding: 2rem;
+            }
+        }
+
+        &--guild {
+            @include media-breakpoint-up(xs) {
+                padding: 2rem;
+            }
+        }
+    }
+
+    &__form {
+        padding: 1rem 1rem 0;
+        margin-top: .5rem;
+
+        &-title {
+            padding-left: 1rem;
+        }
+
+        &-heading {
+            display: flex;
+            padding-left: .5rem;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, .15);
+        }
+
+        &-group {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            @include media-breakpoint-up(md) {
+                margin-left: 1rem;
+            }
+    
+            input {
+                @extend .form-control;
+                font-size: inherit;
+                border-radius: .375rem;
+            }
+        }
+
+        &-help {
+            display: flex;
+            justify-content: space-between;
+            margin-top: .5rem;
+        }
+
+        &-amount {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem .5rem;
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+        }
+
+        label {
+            font-size: 12px;
+            margin-top: .5rem;
+
+            @include media-breakpoint-up(md) {
+                margin-top: 0;
+            }
+        }
+
+        &--info {
+            flex-direction: column;
+            padding: .75rem .5rem 0;
+
+            label {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__recaptcha {
+        margin-left: .5rem;
+        margin-top: 1rem;
+    }
+
+    &__submit {
+        margin-top: 1rem;
+        margin-right: .5rem;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            @extend .btn;
+            background: linear-gradient(90deg, rgba(45, 52, 138, 1) 0%, rgba(49, 94, 170, 1) 36.67%, rgba(52, 113, 184, 1) 73.59%, rgba(53, 159, 216, 1) 100%);
+            color: #fff;
+            font-size: inherit;
+            border-radius: .375rem;
+        }
+    }
+
+    &__guild {
+        margin-top: 1rem;
+    }
+}

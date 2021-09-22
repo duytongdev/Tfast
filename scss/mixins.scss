@@ -1,0 +1,13 @@
+@mixin tfast-flexbox($align : flex-start, $justify : flex-start)
+{
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin tfast-form-control {
+    padding: .75rem;
+    border-radius: .375rem;
+    font-size: inherit;
+    border-color: #BCBEC0;
+}
