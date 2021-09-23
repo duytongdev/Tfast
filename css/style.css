@@ -544,7 +544,7 @@ pre code {
   overflow-y: scroll;
 }
 
-.container, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main, .exchange {
+.container, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -552,22 +552,22 @@ pre code {
   margin-left: auto;
 }
 @media (min-width: 576px) {
-  .container, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main, .exchange {
+  .container, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main, .exchange {
+  .container, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main, .exchange {
+  .container, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main, .exchange {
+  .container, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
     max-width: 1140px;
   }
 }
@@ -580,7 +580,7 @@ pre code {
   margin-left: auto;
 }
 
-.row, .contact__content, .slideshow__grid, .feedback__main, .track__grid, .incorporation__group, .news-board__grid, .exchange__grid {
+.row, .exchange__grid, .contact__content, .slideshow__grid, .feedback__main, .track__grid, .incorporation__group, .news-board__grid {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -599,7 +599,7 @@ pre code {
 
 .col-xl,
 .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .track__info, .col-xl-6, .col-xl-5, .col-xl-4, .slideshow__item, .track__form, .col-xl-3, .col-xl-2, .contact__support, .col-xl-1, .col-lg,
-.col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .feedback__submit button, .feedback__content, .news-board__element--recevie, .exchange__item--form, .col-lg-7, .col-lg-6, .contact__form, .col-lg-5, .col-lg-4, .feedback__info, .news-board__element, .exchange__item--guild, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
+.col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .exchange__item--form, .feedback__submit button, .feedback__content, .news-board__element--recevie, .col-lg-7, .col-lg-6, .contact__form, .col-lg-5, .col-lg-4, .exchange__item--guild, .feedback__info, .news-board__element, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
 .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .incorporation__element, .col-md-3, .col-md-2, .col-md-1, .col-sm,
 .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col,
 .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
@@ -1176,7 +1176,7 @@ pre code {
     max-width: 25%;
   }
 
-  .col-lg-4, .feedback__info, .news-board__element, .exchange__item--guild {
+  .col-lg-4, .exchange__item--guild, .feedback__info, .news-board__element {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
@@ -1196,7 +1196,7 @@ pre code {
     max-width: 58.3333333333%;
   }
 
-  .col-lg-8, .feedback__submit button, .feedback__content, .news-board__element--recevie, .exchange__item--form {
+  .col-lg-8, .exchange__item--form, .feedback__submit button, .feedback__content, .news-board__element--recevie {
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
@@ -1776,8 +1776,8 @@ pre code {
   border: 0;
 }
 
-.form-control, input,
-textarea, .exchange__form-group input {
+.form-control, .exchange__form-group input, input,
+textarea {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -1790,8 +1790,8 @@ textarea, .exchange__form-group input {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.form-control::-ms-expand, input::-ms-expand,
-textarea::-ms-expand, .exchange__form-group input::-ms-expand {
+.form-control::-ms-expand, .exchange__form-group input::-ms-expand, input::-ms-expand,
+textarea::-ms-expand {
   background-color: transparent;
   border: 0;
 }
@@ -1803,8 +1803,8 @@ textarea:focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-.form-control::placeholder, input::placeholder,
-textarea::placeholder, .exchange__form-group input::placeholder {
+.form-control::placeholder, .exchange__form-group input::placeholder, input::placeholder,
+textarea::placeholder {
   color: #6c757d;
   opacity: 1;
 }
@@ -1862,15 +1862,15 @@ select.form-control:focus::-ms-value {
   border: solid transparent;
   border-width: 1px 0;
 }
-.form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control, .input-group-sm > input.form-control-plaintext,
-.input-group-sm > textarea.form-control-plaintext, .exchange__form-group .input-group-sm > input.form-control-plaintext,
+.form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control, .exchange__form-group .input-group-sm > input.form-control-plaintext, .input-group-sm > input.form-control-plaintext,
+.input-group-sm > textarea.form-control-plaintext,
 .input-group-sm > .input-group-prepend > .form-control-plaintext.input-group-text,
 .input-group-sm > .input-group-append > .form-control-plaintext.input-group-text,
 .input-group-sm > .input-group-prepend > .form-control-plaintext.btn,
 .input-group-sm > .input-group-prepend > button.form-control-plaintext,
 .input-group-sm > .input-group-append > .form-control-plaintext.btn,
-.input-group-sm > .input-group-append > button.form-control-plaintext, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, .input-group-lg > input.form-control-plaintext,
-.input-group-lg > textarea.form-control-plaintext, .exchange__form-group .input-group-lg > input.form-control-plaintext,
+.input-group-sm > .input-group-append > button.form-control-plaintext, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, .exchange__form-group .input-group-lg > input.form-control-plaintext, .input-group-lg > input.form-control-plaintext,
+.input-group-lg > textarea.form-control-plaintext,
 .input-group-lg > .input-group-prepend > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-append > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-prepend > .form-control-plaintext.btn,
@@ -1881,16 +1881,16 @@ select.form-control:focus::-ms-value {
   padding-left: 0;
 }
 
-.form-control-sm, .input-group-sm > .form-control, .input-group-sm > input,
-.input-group-sm > textarea, .exchange__form-group .input-group-sm > input,
+.form-control-sm, .input-group-sm > .form-control, .exchange__form-group .input-group-sm > input, .input-group-sm > input,
+.input-group-sm > textarea,
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
-.input-group-sm > .input-group-prepend > button,
 .exchange__submit .input-group-sm > .input-group-prepend > button,
+.input-group-sm > .input-group-prepend > button,
 .input-group-sm > .input-group-append > .btn,
-.input-group-sm > .input-group-append > button,
-.exchange__submit .input-group-sm > .input-group-append > button {
+.exchange__submit .input-group-sm > .input-group-append > button,
+.input-group-sm > .input-group-append > button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -1905,16 +1905,16 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
   height: calc(1.8125rem + 2px);
 }
 
-.form-control-lg, .input-group-lg > .form-control, .input-group-lg > input,
-.input-group-lg > textarea, .exchange__form-group .input-group-lg > input,
+.form-control-lg, .input-group-lg > .form-control, .exchange__form-group .input-group-lg > input, .input-group-lg > input,
+.input-group-lg > textarea,
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
-.input-group-lg > .input-group-prepend > button,
 .exchange__submit .input-group-lg > .input-group-prepend > button,
+.input-group-lg > .input-group-prepend > button,
 .input-group-lg > .input-group-append > .btn,
-.input-group-lg > .input-group-append > button,
-.exchange__submit .input-group-lg > .input-group-append > button {
+.exchange__submit .input-group-lg > .input-group-append > button,
+.input-group-lg > .input-group-append > button {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -2020,17 +2020,17 @@ textarea.is-valid:focus,
   border-color: #28a745;
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
-.was-validated .form-control:valid ~ .valid-feedback, .was-validated input:valid ~ .valid-feedback,
-.was-validated textarea:valid ~ .valid-feedback, .was-validated .exchange__form-group input:valid ~ .valid-feedback,
+.was-validated .form-control:valid ~ .valid-feedback, .was-validated .exchange__form-group input:valid ~ .valid-feedback, .was-validated input:valid ~ .valid-feedback,
+.was-validated textarea:valid ~ .valid-feedback,
 .was-validated .form-control:valid ~ .valid-tooltip,
+.was-validated .exchange__form-group input:valid ~ .valid-tooltip,
 .was-validated input:valid ~ .valid-tooltip,
-.was-validated textarea:valid ~ .valid-tooltip,
-.was-validated .exchange__form-group input:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback, input.is-valid ~ .valid-feedback,
-textarea.is-valid ~ .valid-feedback, .exchange__form-group input.is-valid ~ .valid-feedback,
+.was-validated textarea:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback, .exchange__form-group input.is-valid ~ .valid-feedback, input.is-valid ~ .valid-feedback,
+textarea.is-valid ~ .valid-feedback,
 .form-control.is-valid ~ .valid-tooltip,
+.exchange__form-group input.is-valid ~ .valid-tooltip,
 input.is-valid ~ .valid-tooltip,
 textarea.is-valid ~ .valid-tooltip,
-.exchange__form-group input.is-valid ~ .valid-tooltip,
 .was-validated .custom-select:valid ~ .valid-feedback,
 .was-validated .custom-select:valid ~ .valid-tooltip,
 .custom-select.is-valid ~ .valid-feedback,
@@ -2118,17 +2118,17 @@ textarea.is-invalid:focus,
   border-color: #dc3545;
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
-.was-validated .form-control:invalid ~ .invalid-feedback, .was-validated input:invalid ~ .invalid-feedback,
-.was-validated textarea:invalid ~ .invalid-feedback, .was-validated .exchange__form-group input:invalid ~ .invalid-feedback,
+.was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .exchange__form-group input:invalid ~ .invalid-feedback, .was-validated input:invalid ~ .invalid-feedback,
+.was-validated textarea:invalid ~ .invalid-feedback,
 .was-validated .form-control:invalid ~ .invalid-tooltip,
+.was-validated .exchange__form-group input:invalid ~ .invalid-tooltip,
 .was-validated input:invalid ~ .invalid-tooltip,
-.was-validated textarea:invalid ~ .invalid-tooltip,
-.was-validated .exchange__form-group input:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, input.is-invalid ~ .invalid-feedback,
-textarea.is-invalid ~ .invalid-feedback, .exchange__form-group input.is-invalid ~ .invalid-feedback,
+.was-validated textarea:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, .exchange__form-group input.is-invalid ~ .invalid-feedback, input.is-invalid ~ .invalid-feedback,
+textarea.is-invalid ~ .invalid-feedback,
 .form-control.is-invalid ~ .invalid-tooltip,
+.exchange__form-group input.is-invalid ~ .invalid-tooltip,
 input.is-invalid ~ .invalid-tooltip,
 textarea.is-invalid ~ .invalid-tooltip,
-.exchange__form-group input.is-invalid ~ .invalid-tooltip,
 .was-validated .custom-select:invalid ~ .invalid-feedback,
 .was-validated .custom-select:invalid ~ .invalid-tooltip,
 .custom-select.is-invalid ~ .invalid-feedback,
@@ -2234,7 +2234,7 @@ textarea.is-invalid ~ .invalid-tooltip,
   }
 }
 
-.btn, button, .exchange__submit button {
+.btn, .exchange__submit button, button {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -2721,14 +2721,14 @@ fieldset:disabled a.btn {
   color: #6c757d;
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > button, .exchange__submit .btn-group-lg > button {
+.btn-lg, .btn-group-lg > .btn, .exchange__submit .btn-group-lg > button, .btn-group-lg > button {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > button, .exchange__submit .btn-group-sm > button {
+.btn-sm, .btn-group-sm > .btn, .exchange__submit .btn-group-sm > button, .btn-group-sm > button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2948,52 +2948,52 @@ tbody.collapse.show {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .btn-group > button, .exchange__submit .btn-group > button,
+.btn-group > .btn, .exchange__submit .btn-group > button, .btn-group > button,
 .btn-group-vertical > .btn,
-.btn-group-vertical > button,
-.exchange__submit .btn-group-vertical > button {
+.exchange__submit .btn-group-vertical > button,
+.btn-group-vertical > button {
   position: relative;
   flex: 0 1 auto;
 }
-.btn-group > .btn:hover, .btn-group > button:hover, .exchange__submit .btn-group > button:hover,
+.btn-group > .btn:hover, .exchange__submit .btn-group > button:hover, .btn-group > button:hover,
 .btn-group-vertical > .btn:hover,
-.btn-group-vertical > button:hover,
-.exchange__submit .btn-group-vertical > button:hover {
+.exchange__submit .btn-group-vertical > button:hover,
+.btn-group-vertical > button:hover {
   z-index: 1;
 }
-.btn-group > .btn:focus, .btn-group > button:focus, .exchange__submit .btn-group > button:focus, .btn-group > .btn:active, .btn-group > button:active, .exchange__submit .btn-group > button:active, .btn-group > .btn.active, .btn-group > button.active, .exchange__submit .btn-group > button.active,
+.btn-group > .btn:focus, .exchange__submit .btn-group > button:focus, .btn-group > button:focus, .btn-group > .btn:active, .exchange__submit .btn-group > button:active, .btn-group > button:active, .btn-group > .btn.active, .exchange__submit .btn-group > button.active, .btn-group > button.active,
 .btn-group-vertical > .btn:focus,
-.btn-group-vertical > button:focus,
 .exchange__submit .btn-group-vertical > button:focus,
+.btn-group-vertical > button:focus,
 .btn-group-vertical > .btn:active,
-.btn-group-vertical > button:active,
 .exchange__submit .btn-group-vertical > button:active,
+.btn-group-vertical > button:active,
 .btn-group-vertical > .btn.active,
-.btn-group-vertical > button.active,
-.exchange__submit .btn-group-vertical > button.active {
+.exchange__submit .btn-group-vertical > button.active,
+.btn-group-vertical > button.active {
   z-index: 1;
 }
-.btn-group .btn + .btn, .btn-group button + .btn, .btn-group .btn + button, .btn-group button + button, .btn-group .exchange__submit button + .btn, .btn-group .exchange__submit button + button, .btn-group .exchange__submit .btn + button,
+.btn-group .btn + .btn, .btn-group .exchange__submit button + .btn, .btn-group .exchange__submit .btn + button, .btn-group .exchange__submit button + button, .btn-group button + .btn, .btn-group .btn + button, .btn-group button + button,
 .btn-group .btn + .btn-group,
-.btn-group button + .btn-group,
 .btn-group .exchange__submit button + .btn-group,
+.btn-group button + .btn-group,
 .btn-group .btn-group + .btn,
-.btn-group .btn-group + button,
 .btn-group .exchange__submit .btn-group + button,
+.btn-group .btn-group + button,
 .btn-group .btn-group + .btn-group,
 .btn-group-vertical .btn + .btn,
+.btn-group-vertical .exchange__submit button + .btn,
+.btn-group-vertical .exchange__submit .btn + button,
+.btn-group-vertical .exchange__submit button + button,
 .btn-group-vertical button + .btn,
 .btn-group-vertical .btn + button,
 .btn-group-vertical button + button,
-.btn-group-vertical .exchange__submit button + .btn,
-.btn-group-vertical .exchange__submit button + button,
-.btn-group-vertical .exchange__submit .btn + button,
 .btn-group-vertical .btn + .btn-group,
-.btn-group-vertical button + .btn-group,
 .btn-group-vertical .exchange__submit button + .btn-group,
+.btn-group-vertical button + .btn-group,
 .btn-group-vertical .btn-group + .btn,
-.btn-group-vertical .btn-group + button,
 .btn-group-vertical .exchange__submit .btn-group + button,
+.btn-group-vertical .btn-group + button,
 .btn-group-vertical .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -3007,16 +3007,16 @@ tbody.collapse.show {
   width: auto;
 }
 
-.btn-group > .btn:first-child, .btn-group > button:first-child, .exchange__submit .btn-group > button:first-child {
+.btn-group > .btn:first-child, .exchange__submit .btn-group > button:first-child, .btn-group > button:first-child {
   margin-left: 0;
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > button:not(:last-child):not(.dropdown-toggle), .exchange__submit .btn-group > button:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .exchange__submit .btn-group > button:not(:last-child):not(.dropdown-toggle), .btn-group > button:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
 .btn-group > .btn-group:not(:last-child) > button {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:not(:first-child), .btn-group > button:not(:first-child), .exchange__submit .btn-group > button:not(:first-child),
+.btn-group > .btn:not(:first-child), .exchange__submit .btn-group > button:not(:first-child), .btn-group > button:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn,
 .btn-group > .btn-group:not(:first-child) > button {
   border-top-left-radius: 0;
@@ -3059,20 +3059,20 @@ tbody.collapse.show {
   margin-top: -1px;
   margin-left: 0;
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > button:not(:last-child):not(.dropdown-toggle), .exchange__submit .btn-group-vertical > button:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .exchange__submit .btn-group-vertical > button:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > button:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
 .btn-group-vertical > .btn-group:not(:last-child) > button {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > button:not(:first-child), .exchange__submit .btn-group-vertical > button:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .exchange__submit .btn-group-vertical > button:not(:first-child), .btn-group-vertical > button:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
 .btn-group-vertical > .btn-group:not(:first-child) > button {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group-toggle > .btn, .btn-group-toggle > button, .exchange__submit .btn-group-toggle > button,
+.btn-group-toggle > .btn, .exchange__submit .btn-group-toggle > button, .btn-group-toggle > button,
 .btn-group-toggle > .btn-group > .btn,
 .btn-group-toggle > .btn-group > button {
   margin-bottom: 0;
@@ -3094,8 +3094,8 @@ tbody.collapse.show {
   align-items: stretch;
   width: 100%;
 }
-.input-group > .form-control, .input-group > input,
-.input-group > textarea, .exchange__form-group .input-group > input,
+.input-group > .form-control, .exchange__form-group .input-group > input, .input-group > input,
+.input-group > textarea,
 .input-group > .custom-select,
 .input-group > .custom-file {
   position: relative;
@@ -3103,8 +3103,8 @@ tbody.collapse.show {
   width: 1%;
   margin-bottom: 0;
 }
-.input-group > .form-control:focus, .input-group > input:focus,
-.input-group > textarea:focus, .exchange__form-group .input-group > input:focus,
+.input-group > .form-control:focus, .exchange__form-group .input-group > input:focus, .input-group > input:focus,
+.input-group > textarea:focus,
 .input-group > .custom-select:focus,
 .input-group > .custom-file:focus {
   z-index: 3;
@@ -3133,14 +3133,14 @@ tbody.collapse.show {
 .input-group > .custom-file + .custom-file {
   margin-left: -1px;
 }
-.input-group > .form-control:not(:last-child), .input-group > input:not(:last-child),
-.input-group > textarea:not(:last-child), .exchange__form-group .input-group > input:not(:last-child),
+.input-group > .form-control:not(:last-child), .exchange__form-group .input-group > input:not(:last-child), .input-group > input:not(:last-child),
+.input-group > textarea:not(:last-child),
 .input-group > .custom-select:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.input-group > .form-control:not(:first-child), .input-group > input:not(:first-child),
-.input-group > textarea:not(:first-child), .exchange__form-group .input-group > input:not(:first-child),
+.input-group > .form-control:not(:first-child), .exchange__form-group .input-group > input:not(:first-child), .input-group > input:not(:first-child),
+.input-group > textarea:not(:first-child),
 .input-group > .custom-select:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -3168,28 +3168,28 @@ tbody.collapse.show {
   position: relative;
   z-index: 2;
 }
-.input-group-prepend .btn + .btn, .input-group-prepend button + .btn, .input-group-prepend .btn + button, .input-group-prepend button + button, .input-group-prepend .exchange__submit button + .btn, .input-group-prepend .exchange__submit button + button, .input-group-prepend .exchange__submit .btn + button,
+.input-group-prepend .btn + .btn, .input-group-prepend .exchange__submit button + .btn, .input-group-prepend .exchange__submit .btn + button, .input-group-prepend .exchange__submit button + button, .input-group-prepend button + .btn, .input-group-prepend .btn + button, .input-group-prepend button + button,
 .input-group-prepend .btn + .input-group-text,
-.input-group-prepend button + .input-group-text,
 .input-group-prepend .exchange__submit button + .input-group-text,
+.input-group-prepend button + .input-group-text,
 .input-group-prepend .input-group-text + .input-group-text,
 .input-group-prepend .input-group-text + .btn,
-.input-group-prepend .input-group-text + button,
 .input-group-prepend .exchange__submit .input-group-text + button,
+.input-group-prepend .input-group-text + button,
 .input-group-append .btn + .btn,
+.input-group-append .exchange__submit button + .btn,
+.input-group-append .exchange__submit .btn + button,
+.input-group-append .exchange__submit button + button,
 .input-group-append button + .btn,
 .input-group-append .btn + button,
 .input-group-append button + button,
-.input-group-append .exchange__submit button + .btn,
-.input-group-append .exchange__submit button + button,
-.input-group-append .exchange__submit .btn + button,
 .input-group-append .btn + .input-group-text,
-.input-group-append button + .input-group-text,
 .input-group-append .exchange__submit button + .input-group-text,
+.input-group-append button + .input-group-text,
 .input-group-append .input-group-text + .input-group-text,
 .input-group-append .input-group-text + .btn,
-.input-group-append .input-group-text + button,
-.input-group-append .exchange__submit .input-group-text + button {
+.input-group-append .exchange__submit .input-group-text + button,
+.input-group-append .input-group-text + button {
   margin-left: -1px;
 }
 
@@ -3536,7 +3536,7 @@ tbody.collapse.show {
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
-.navbar > .container, .navbar > .contact, .navbar > .slideshow__container, .navbar > .feedback__container, .navbar > .track__container, .navbar > .incorporation, .navbar > .news-board, .navbar > .top-nav, .navbar > .header__main, .navbar > .exchange,
+.navbar > .container, .navbar > .exchange, .navbar > .contact, .navbar > .slideshow__container, .navbar > .feedback__container, .navbar > .track__container, .navbar > .incorporation, .navbar > .news-board, .navbar > .top-nav, .navbar > .header__main,
 .navbar > .container-fluid {
   display: flex;
   flex-wrap: wrap;
@@ -3611,7 +3611,7 @@ tbody.collapse.show {
 }
 
 @media (max-width: 575.98px) {
-  .navbar-expand-sm > .container, .navbar-expand-sm > .contact, .navbar-expand-sm > .slideshow__container, .navbar-expand-sm > .feedback__container, .navbar-expand-sm > .track__container, .navbar-expand-sm > .incorporation, .navbar-expand-sm > .news-board, .navbar-expand-sm > .top-nav, .navbar-expand-sm > .header__main, .navbar-expand-sm > .exchange,
+  .navbar-expand-sm > .container, .navbar-expand-sm > .exchange, .navbar-expand-sm > .contact, .navbar-expand-sm > .slideshow__container, .navbar-expand-sm > .feedback__container, .navbar-expand-sm > .track__container, .navbar-expand-sm > .incorporation, .navbar-expand-sm > .news-board, .navbar-expand-sm > .top-nav, .navbar-expand-sm > .header__main,
 .navbar-expand-sm > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -3636,7 +3636,7 @@ tbody.collapse.show {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-sm > .container, .navbar-expand-sm > .contact, .navbar-expand-sm > .slideshow__container, .navbar-expand-sm > .feedback__container, .navbar-expand-sm > .track__container, .navbar-expand-sm > .incorporation, .navbar-expand-sm > .news-board, .navbar-expand-sm > .top-nav, .navbar-expand-sm > .header__main, .navbar-expand-sm > .exchange,
+  .navbar-expand-sm > .container, .navbar-expand-sm > .exchange, .navbar-expand-sm > .contact, .navbar-expand-sm > .slideshow__container, .navbar-expand-sm > .feedback__container, .navbar-expand-sm > .track__container, .navbar-expand-sm > .incorporation, .navbar-expand-sm > .news-board, .navbar-expand-sm > .top-nav, .navbar-expand-sm > .header__main,
 .navbar-expand-sm > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -3653,7 +3653,7 @@ tbody.collapse.show {
   }
 }
 @media (max-width: 767.98px) {
-  .navbar-expand-md > .container, .navbar-expand-md > .contact, .navbar-expand-md > .slideshow__container, .navbar-expand-md > .feedback__container, .navbar-expand-md > .track__container, .navbar-expand-md > .incorporation, .navbar-expand-md > .news-board, .navbar-expand-md > .top-nav, .navbar-expand-md > .header__main, .navbar-expand-md > .exchange,
+  .navbar-expand-md > .container, .navbar-expand-md > .exchange, .navbar-expand-md > .contact, .navbar-expand-md > .slideshow__container, .navbar-expand-md > .feedback__container, .navbar-expand-md > .track__container, .navbar-expand-md > .incorporation, .navbar-expand-md > .news-board, .navbar-expand-md > .top-nav, .navbar-expand-md > .header__main,
 .navbar-expand-md > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -3678,7 +3678,7 @@ tbody.collapse.show {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-md > .container, .navbar-expand-md > .contact, .navbar-expand-md > .slideshow__container, .navbar-expand-md > .feedback__container, .navbar-expand-md > .track__container, .navbar-expand-md > .incorporation, .navbar-expand-md > .news-board, .navbar-expand-md > .top-nav, .navbar-expand-md > .header__main, .navbar-expand-md > .exchange,
+  .navbar-expand-md > .container, .navbar-expand-md > .exchange, .navbar-expand-md > .contact, .navbar-expand-md > .slideshow__container, .navbar-expand-md > .feedback__container, .navbar-expand-md > .track__container, .navbar-expand-md > .incorporation, .navbar-expand-md > .news-board, .navbar-expand-md > .top-nav, .navbar-expand-md > .header__main,
 .navbar-expand-md > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -3695,7 +3695,7 @@ tbody.collapse.show {
   }
 }
 @media (max-width: 991.98px) {
-  .navbar-expand-lg > .container, .navbar-expand-lg > .contact, .navbar-expand-lg > .slideshow__container, .navbar-expand-lg > .feedback__container, .navbar-expand-lg > .track__container, .navbar-expand-lg > .incorporation, .navbar-expand-lg > .news-board, .navbar-expand-lg > .top-nav, .navbar-expand-lg > .header__main, .navbar-expand-lg > .exchange,
+  .navbar-expand-lg > .container, .navbar-expand-lg > .exchange, .navbar-expand-lg > .contact, .navbar-expand-lg > .slideshow__container, .navbar-expand-lg > .feedback__container, .navbar-expand-lg > .track__container, .navbar-expand-lg > .incorporation, .navbar-expand-lg > .news-board, .navbar-expand-lg > .top-nav, .navbar-expand-lg > .header__main,
 .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -3720,7 +3720,7 @@ tbody.collapse.show {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-lg > .container, .navbar-expand-lg > .contact, .navbar-expand-lg > .slideshow__container, .navbar-expand-lg > .feedback__container, .navbar-expand-lg > .track__container, .navbar-expand-lg > .incorporation, .navbar-expand-lg > .news-board, .navbar-expand-lg > .top-nav, .navbar-expand-lg > .header__main, .navbar-expand-lg > .exchange,
+  .navbar-expand-lg > .container, .navbar-expand-lg > .exchange, .navbar-expand-lg > .contact, .navbar-expand-lg > .slideshow__container, .navbar-expand-lg > .feedback__container, .navbar-expand-lg > .track__container, .navbar-expand-lg > .incorporation, .navbar-expand-lg > .news-board, .navbar-expand-lg > .top-nav, .navbar-expand-lg > .header__main,
 .navbar-expand-lg > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -3737,7 +3737,7 @@ tbody.collapse.show {
   }
 }
 @media (max-width: 1199.98px) {
-  .navbar-expand-xl > .container, .navbar-expand-xl > .contact, .navbar-expand-xl > .slideshow__container, .navbar-expand-xl > .feedback__container, .navbar-expand-xl > .track__container, .navbar-expand-xl > .incorporation, .navbar-expand-xl > .news-board, .navbar-expand-xl > .top-nav, .navbar-expand-xl > .header__main, .navbar-expand-xl > .exchange,
+  .navbar-expand-xl > .container, .navbar-expand-xl > .exchange, .navbar-expand-xl > .contact, .navbar-expand-xl > .slideshow__container, .navbar-expand-xl > .feedback__container, .navbar-expand-xl > .track__container, .navbar-expand-xl > .incorporation, .navbar-expand-xl > .news-board, .navbar-expand-xl > .top-nav, .navbar-expand-xl > .header__main,
 .navbar-expand-xl > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -3762,7 +3762,7 @@ tbody.collapse.show {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-xl > .container, .navbar-expand-xl > .contact, .navbar-expand-xl > .slideshow__container, .navbar-expand-xl > .feedback__container, .navbar-expand-xl > .track__container, .navbar-expand-xl > .incorporation, .navbar-expand-xl > .news-board, .navbar-expand-xl > .top-nav, .navbar-expand-xl > .header__main, .navbar-expand-xl > .exchange,
+  .navbar-expand-xl > .container, .navbar-expand-xl > .exchange, .navbar-expand-xl > .contact, .navbar-expand-xl > .slideshow__container, .navbar-expand-xl > .feedback__container, .navbar-expand-xl > .track__container, .navbar-expand-xl > .incorporation, .navbar-expand-xl > .news-board, .navbar-expand-xl > .top-nav, .navbar-expand-xl > .header__main,
 .navbar-expand-xl > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -3782,7 +3782,7 @@ tbody.collapse.show {
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
-.navbar-expand > .container, .navbar-expand > .contact, .navbar-expand > .slideshow__container, .navbar-expand > .feedback__container, .navbar-expand > .track__container, .navbar-expand > .incorporation, .navbar-expand > .news-board, .navbar-expand > .top-nav, .navbar-expand > .header__main, .navbar-expand > .exchange,
+.navbar-expand > .container, .navbar-expand > .exchange, .navbar-expand > .contact, .navbar-expand > .slideshow__container, .navbar-expand > .feedback__container, .navbar-expand > .track__container, .navbar-expand > .incorporation, .navbar-expand > .news-board, .navbar-expand > .top-nav, .navbar-expand > .header__main,
 .navbar-expand > .container-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -3801,7 +3801,7 @@ tbody.collapse.show {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
-.navbar-expand > .container, .navbar-expand > .contact, .navbar-expand > .slideshow__container, .navbar-expand > .feedback__container, .navbar-expand > .track__container, .navbar-expand > .incorporation, .navbar-expand > .news-board, .navbar-expand > .top-nav, .navbar-expand > .header__main, .navbar-expand > .exchange,
+.navbar-expand > .container, .navbar-expand > .exchange, .navbar-expand > .contact, .navbar-expand > .slideshow__container, .navbar-expand > .feedback__container, .navbar-expand > .track__container, .navbar-expand > .incorporation, .navbar-expand > .news-board, .navbar-expand > .top-nav, .navbar-expand > .header__main,
 .navbar-expand > .container-fluid {
   flex-wrap: nowrap;
 }
@@ -8336,7 +8336,7 @@ h3 {
     min-width: 992px !important;
   }
 
-  .container, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main, .exchange {
+  .container, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
     min-width: 992px !important;
   }
 
@@ -8363,117 +8363,6 @@ h3 {
     border: 1px solid #ddd !important;
   }
 }
-.exchange {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  display: flex;
-}
-.exchange__grid {
-  width: 100%;
-  flex-grow: 1;
-}
-.exchange__item--form {
-  margin-bottom: 1rem;
-}
-.exchange__item--guild a {
-  color: #29255e;
-}
-.exchange__card {
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
-  padding: 2rem 0;
-  border-radius: 0.375rem;
-}
-@media (min-width: 768px) {
-  .exchange__card--form {
-    padding: 2rem;
-  }
-}
-.exchange__card--guild {
-  padding: 2rem;
-}
-.exchange__form {
-  padding: 1rem 1rem 0;
-  margin-top: 0.5rem;
-}
-.exchange__form-title {
-  padding-left: 1rem;
-}
-.exchange__form-heading {
-  display: flex;
-  padding-left: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-}
-.exchange__form-group {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .exchange__form-group {
-    margin-left: 1rem;
-  }
-}
-.exchange__form-group input {
-  font-size: inherit;
-  border-radius: 0.375rem;
-}
-.exchange__form-help {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0.5rem;
-}
-.exchange__form-amount {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-.exchange__group {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 0.5rem;
-}
-@media (min-width: 768px) {
-  .exchange__group {
-    flex-direction: row;
-  }
-}
-.exchange__group label {
-  font-size: 12px;
-  margin-top: 0.5rem;
-}
-@media (min-width: 768px) {
-  .exchange__group label {
-    margin-top: 0;
-  }
-}
-.exchange__group--info {
-  flex-direction: column;
-  padding: 0.75rem 0.5rem 0;
-}
-.exchange__group--info label {
-  margin-top: 0;
-}
-.exchange__recaptcha {
-  margin-left: 0.5rem;
-  margin-top: 1rem;
-}
-.exchange__submit {
-  margin-top: 1rem;
-  margin-right: 0.5rem;
-  display: flex;
-  justify-content: flex-end;
-}
-.exchange__submit button {
-  background: linear-gradient(90deg, #2d348a 0%, #315eaa 36.67%, #3471b8 73.59%, #359fd8 100%);
-  color: #fff;
-  font-size: inherit;
-  border-radius: 0.375rem;
-}
-.exchange__guild {
-  margin-top: 1rem;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
@@ -8510,6 +8399,9 @@ textarea::-ms-input-placeholder {
 }
 
 button {
+  border: none;
+}
+button:focus {
   box-shadow: none !important;
 }
 
@@ -8548,7 +8440,7 @@ button {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.top-nav__link svg {
+.top-nav__link img {
   width: 1rem;
   height: 1rem;
 }
@@ -8587,7 +8479,7 @@ button {
   align-items: center;
   text-transform: uppercase;
   padding: 0.75rem 8rem 0.75rem 2.75rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: #58595B;
 }
 .main-nav__item a:hover {
   background-color: rgba(0, 0, 0, 0.1);
@@ -8608,7 +8500,7 @@ button {
 .main-nav__item:last-child span {
   margin-right: 0.25rem;
 }
-.main-nav__item:last-child svg {
+.main-nav__item:last-child img {
   width: 8px;
   height: 8px;
 }
@@ -8628,13 +8520,14 @@ button {
   padding: 0.75rem;
   margin-bottom: 0;
   border-radius: 50%;
+  cursor: pointer;
 }
 @media (min-width: 992px) {
   .main-nav__toggle, .main-nav__close {
     display: none;
   }
 }
-.main-nav__toggle svg, .main-nav__close svg {
+.main-nav__toggle img, .main-nav__close img {
   width: 1.5rem;
   height: 1.5rem;
 }
@@ -8774,7 +8667,24 @@ button {
 
 .track {
   padding: 3.25rem 0;
+  padding-bottom: 4rem;
+  position: relative;
+}
+.track::before {
   background: linear-gradient(90deg, #2d348a 0%, #315eaa 36.67%, #3471b8 73.59%, #359fd8 100%);
+  top: 0;
+}
+.track::after {
+  background-image: url(../images/pattern-track.png);
+  background-repeat: no-repeat;
+  top: 70px;
+}
+.track::before, .track::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
 }
 .track__grid {
   align-items: center;
@@ -8818,10 +8728,13 @@ button {
   font-size: 13px;
   background: linear-gradient(90deg, #2d348a 0%, #315eaa 36.67%, #3471b8 73.59%, #359fd8 100%);
   color: #fff;
-  border-color: #fff;
+  border: 1px solid #fff;
   width: 100%;
 }
-.track__button svg {
+.track__button:hover {
+  box-shadow: 0 0 0.75rem rgba(255, 255, 255, 0.5);
+}
+.track__button img {
   width: 14px;
   height: 14px;
 }
@@ -8841,7 +8754,7 @@ button {
   align-items: center;
   justify-content: center;
 }
-.track__header-info svg {
+.track__header-info img {
   width: 25px;
   height: 25px;
 }
@@ -8889,7 +8802,7 @@ button {
 .track__label-status strong {
   margin-left: 0.25rem;
 }
-.track__label-status svg {
+.track__label-status img {
   width: 12px;
   height: 12px;
 }
@@ -8954,7 +8867,7 @@ button {
   background: linear-gradient(90deg, #2d348a 0%, #315eaa 36.67%, #3471b8 73.59%, #359fd8 100%);
   color: #fff;
 }
-.feedback__submit button svg {
+.feedback__submit button img {
   width: 14px;
   height: 14px;
 }
@@ -9034,7 +8947,7 @@ button {
   top: 50%;
   display: none;
 }
-.slideshow__arrow svg {
+.slideshow__arrow img {
   width: 44px;
   height: 14px;
 }
@@ -9066,7 +8979,7 @@ button {
   font-size: 1.75rem;
   margin-left: 0.5rem;
 }
-.contact__header svg {
+.contact__header img {
   width: 26px;
 }
 .contact__content {
@@ -9083,7 +8996,7 @@ button {
 .contact__support {
   margin-bottom: 1rem;
 }
-.contact__support svg {
+.contact__support img {
   height: 12px;
 }
 @media (min-width: 1200px) {
@@ -9126,7 +9039,7 @@ button {
   display: flex;
   align-items: center;
 }
-.contact__button svg {
+.contact__button img {
   width: 14px;
   height: 14px;
 }
@@ -9140,6 +9053,118 @@ footer {
   text-align: center;
   padding: 0.5rem;
   font-size: 14px;
+}
+
+.exchange {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+}
+.exchange__grid {
+  width: 100%;
+  flex-grow: 1;
+}
+.exchange__item--form {
+  margin-bottom: 1rem;
+}
+.exchange__item--guild a {
+  color: #29255e;
+}
+.exchange__card {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  padding: 2rem 0;
+  border-radius: 0.375rem;
+}
+@media (min-width: 768px) {
+  .exchange__card--form {
+    padding: 2rem;
+  }
+}
+.exchange__card--guild {
+  padding: 2rem;
+}
+.exchange__form {
+  padding: 1rem 1rem 0;
+  margin-top: 0.5rem;
+}
+.exchange__form-title {
+  padding-left: 1rem;
+}
+.exchange__form-heading {
+  display: flex;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.exchange__form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .exchange__form-group {
+    margin-left: 1rem;
+  }
+}
+.exchange__form-group input {
+  font-size: inherit;
+  border-radius: 0.375rem;
+}
+.exchange__form-help {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.exchange__form-amount {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.exchange__group {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+}
+@media (min-width: 768px) {
+  .exchange__group {
+    flex-direction: row;
+  }
+}
+.exchange__group label {
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+@media (min-width: 768px) {
+  .exchange__group label {
+    margin-top: 0;
+  }
+}
+.exchange__group--info {
+  flex-direction: column;
+  padding: 0.75rem 0.5rem 0;
+}
+.exchange__group--info label {
+  margin-top: 0;
+}
+.exchange__recaptcha {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+.exchange__submit {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.exchange__submit button {
+  background: linear-gradient(90deg, #2d348a 0%, #315eaa 36.67%, #3471b8 73.59%, #359fd8 100%);
+  color: #fff;
+  font-size: inherit;
+  border-radius: 0.375rem;
+  border: none;
+}
+.exchange__guild {
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
