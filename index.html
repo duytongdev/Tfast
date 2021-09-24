@@ -7,7 +7,8 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -53,10 +54,18 @@
                         <a href="#">Contact us</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#">
-                            <span>EN</span>
-                            <img src="images/sort-down.svg" alt="">
-                        </a>
+                        <!-- <label for="nav-mobile" class="main-nav__overlay"></label> -->
+                        <label for="language-switcher" class="main-nav__dropdown-toggle">
+                            <span>
+                                <span>EN</span>
+                                <img src="images/sort-down.svg" alt="">
+                            </span>
+                        </label>
+                        <input type="checkbox" id="language-switcher" class="main-nav__dropdown-checkbox" hidden>
+                        <div class="main-nav__dropdown">
+                            <a href="">English</a>
+                            <a href="">Tiếng Việt</a>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -386,13 +395,10 @@
         </div>
     </section>
     <section class="slideshow">
-        <div class="slideshow__arrow slideshow__arrow--left">
-            <img src="images/long-arrow-left.svg" alt="">
-        </div>
         <div class="slideshow__container">
-            <div class="slideshow__grid">
-                <div class="slideshow__item">
-                    <div class="slideshow__card">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="slideshow__card swiper-slide">
                         <div class="slideshow__info">
                             <img src="images/taylor-swift.jpg" alt="">
                             <div class="slideshow__detail">
@@ -407,9 +413,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="slideshow__item">
-                    <div class="slideshow__card">
+                    <div class="slideshow__card swiper-slide">
                         <div class="slideshow__info">
                             <img src="images/taylor-swift.jpg" alt="">
                             <div class="slideshow__detail">
@@ -424,9 +428,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="slideshow__item">
-                    <div class="slideshow__card">
+                    <div class="slideshow__card swiper-slide">
                         <div class="slideshow__info">
                             <img src="images/taylor-swift.jpg" alt="">
                             <div class="slideshow__detail">
@@ -443,9 +445,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="slideshow__arrow slideshow__arrow--right">
-            <img src="images/long-arrow-right.svg" alt="">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
     <section class="contact">
@@ -486,5 +487,33 @@
         </div>
     </section>
     <footer>COPYRIGHT © 2021 TFAST.COM.VN - ALL RIGHTS RESERVED.</footer>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+        
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+            // when window width is >= 320px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 60
+                }
+            }
+        });
+    </script>
 </body>
 </html>

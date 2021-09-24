@@ -129,6 +129,8 @@ button {
     }
 
     &__item {
+        color: rgba(255, 255, 255, .8);
+
         a {
             display: flex;
             align-items: center;
@@ -153,14 +155,12 @@ button {
 
         &:last-child {
             display: none;
+            position: relative;
             
-            span {
-                margin-right: .25rem;
-            }
-
             img {
                 width: 8px;
                 height: 8px;
+                margin-left: .25rem;
             }
 
             @include media-breakpoint-up(lg) {
@@ -231,6 +231,36 @@ button {
         background-color: rgb(0, 0, 0, .3);
         z-index: 1;
         display: none;
+    }
+
+    &__dropdown {
+        @extend .dropdown-menu;
+        display: none;
+        flex-direction: column;
+        left: auto;
+        right: 0;
+        margin-top: 0;
+
+        &-toggle {
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+
+        a {
+            color: #58595B;
+            padding: 0.25rem 1rem;
+            text-transform: capitalize;
+            font-size: $font-size-base;
+
+            &:hover {
+                color: #58595B;
+                background-color: #f8f9fa;
+            }
+        }
+    }
+
+    &__dropdown-checkbox:checked ~ .main-nav__dropdown  {
+        display: flex;
     }
 }
 
@@ -636,38 +666,7 @@ button {
 
     &__container {
         @extend .container;
-        padding-top: 4rem;
-        padding-bottom: 3rem;
-
-        @include media-breakpoint-up(lg) {
-            padding-bottom: 4rem;
-        }
-    }
-
-    &__grid {
-        @extend .row;
-
-        .slideshow__item:first-child {
-            @include media-breakpoint-up(xs) {
-                display: block;
-            }
-        }
-
-        .slideshow__item:nth-child(2) {
-            @include media-breakpoint-up(md) {
-                display: block;
-            }
-        }
-    }
-
-    &__item {
-        @extend .col-xl-4;
-        @extend .col-md-6;
-        display: none;
-
-        @include media-breakpoint-up(xl) {
-            display: block;
-        }
+        padding: 4rem 0;
     }
 
     &__card {
@@ -675,12 +674,7 @@ button {
         padding: 1.25rem;
         border-radius: 1rem;
         border: none;
-        margin-bottom: 1rem;
-        height: 100%;
-
-        @include media-breakpoint-up(lg) {
-            margin-bottom: 0;
-        }
+        height: auto !important;
     }
 
     &__info {
@@ -712,29 +706,6 @@ button {
 
         p {
             margin-bottom: 0;
-        }
-    }
-
-    &__arrow {
-        position: absolute;
-        top: 50%;
-        display: none;
-
-        img {
-            width: 44px;
-            height: 14px;
-        }
-
-        @include media-breakpoint-up(xl) {
-            display: block;
-        }
-
-        &--left {
-            left: 3rem;
-        }
-
-        &--right {
-            right: 3rem;
         }
     }
 }
@@ -848,4 +819,54 @@ footer {
     text-align: center;
     padding: .5rem;
     font-size: 14px;
+}
+
+.swiper {
+    padding: 0 15px !important;
+    width: 90%;
+
+    @include media-breakpoint-up(md) {
+        width: 100%;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 22px !important;
+
+    &::after {
+        display: none;
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 44px !important;
+    }
+}
+
+.swiper-button-prev {
+    background-image: url(../images/long-arrow-left.svg);
+    left: .375rem !important;
+
+    @include media-breakpoint-up(md) {
+        left: .75rem !important;
+    }
+
+    @include media-breakpoint-up(xl) {
+        left: 3.25rem !important;
+    }
+}
+
+.swiper-button-next {
+    background-image: url(../images/long-arrow-right.svg);
+    right: .375rem !important;
+
+    @include media-breakpoint-up(md) {
+        right: .75rem !important;
+    }
+
+    @include media-breakpoint-up(xl) {
+        right: 3.25rem !important;
+    }
 }
