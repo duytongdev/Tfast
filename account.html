@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=F, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <nav class="top-nav">
+                <a href="#" class="top-nav__link">
+                    <img src="images/user-circle.svg" alt="">
+                    <span>Create Account</span>
+                </a>
+                <a href="#" class="top-nav__link">                                                      
+                    <img src="images/sign-in.svg" alt="">
+                    <span>Login</span>
+                </a>
+            </nav>
+        </div>
+        <div class="header__main">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <nav class="main-nav">
+                <label for="nav-mobile" class="main-nav__toggle">
+                    <img src="images/bars.svg" alt="">
+                </label>
+                <input type="checkbox" id="nav-mobile" class="main-nav__checkbox" hidden>
+                <label for="nav-mobile" class="main-nav__overlay"></label>
+                <ul class="main-nav__list">
+                    <label for="nav-mobile" class="main-nav__close">
+                        <img src="images/times.svg" alt="">
+                    </label>
+                    <li class="main-nav__item">
+                        <a href="exchange.html">Exchange</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">About us</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Tracking</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Policies</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Contact us</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <label for="language-switcher" class="main-nav__dropdown-toggle">
+                            <span>
+                                <span>EN</span>
+                                <img src="images/sort-down.svg" alt="">
+                            </span>
+                        </label>
+                        <input type="checkbox" id="language-switcher" class="main-nav__dropdown-checkbox" hidden>
+                        <div class="main-nav__dropdown">
+                            <a href="">English</a>
+                            <a href="">Tiếng Việt</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="account">
+        <div class="account__grid">
+            <div class="account__profile">
+                <div class="account__profile-card">
+                    <span class="account__heading">HỒ SƠ CÁ NHÂN</span>
+                    <div class="account__profile-content">
+                        <div class="account__profile-info">
+                            <div class="account__profile-item">
+                                <strong>Tên đăng nhập/ Email:</strong>
+                                <span>: hongnguyen1509design@gmail.com</span>
+                            </div>
+                            <div class="account__profile-item">
+                                <strong>Mật khẩu:</strong>
+                                <a href="#">: Đổi mật khẩu</a>
+                            </div>
+                            <div class="account__profile-item">
+                                <strong>Trạng thái:</strong>
+                                <div class="account__profile-status">: <span>Đã kích hoạt</span></div>
+                            </div>
+                            <div class="account__profile-item">
+                                <strong>Ngày tham gia:</strong>
+                                <span>: 21:34, 06/09/2021</span>
+                            </div>
+                            <div class="account__profile-item">
+                                <strong>Đăng nhập lần cuối:</strong>
+                                <span>: 6 giây trước</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="account__grid">
+            <div class="account__statics">
+                <span class="account__heading">YOUR STATICS</span>
+                <form action="" class="account__daterangepicker">
+                    <div class="account__input-group">
+                        <img src="images/calender.svg" alt="">
+                        <input name="daterange" id="search_checkin" type="text" value="2019-12-12" readonly>
+                    </div>
+                    <div class="account__input-group">
+                        <img src="images/calender.svg" alt="">
+                        <input name="daterange" id="search_checkout" type="text" value="2020-12-12" readonly>
+                    </div>
+                    <button class="account__search">
+                        <img src="images/search.svg" alt="">
+                    </button>
+                </form>
+                <div class="account__list-state">
+                    <div class="account__list-state-item">
+                        <img src="images/exchanges.svg" alt="">
+                        <div class="account__list-state-info">
+                            <strong>1</strong>
+                            <span>Total Exchanges</span>
+                        </div>
+                    </div>
+                    <div class="account__list-state-item">
+                        <img src="images/processed.svg" alt="">
+                        <div class="account__list-state-info">
+                            <strong>0</strong>
+                            <span>Total Processed</span>
+                        </div>
+                    </div>
+                    <div class="account__list-state-item">
+                        <img src="images/uncompleted.svg" alt="">
+                        <div class="account__list-state-info">
+                            <strong>0</strong>
+                            <span>Total Uncompleted</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="account__exchange-info">
+                    <span class="account__exchange-info-heading">2 Total Exchanges</span>
+                    <div class="account__exchange-info-main">
+                        <div class="account__exchange-info-item">
+                            <div class="account__exchange-info-content">
+                                <div class="account__exchange-info-method">
+                                    <img src="images/skirll2.png" alt="" class="first">
+                                    <img src="images/arrow-right.svg" alt="" class="second">
+                                    <img src="images/paytm2.png" alt="" class="third">
+                                </div>
+                                <div class="account__exchange-info-detail">
+                                    <a href="#">Exchange #ADHDAKAJAK72911190</a>
+                                    <span>Amount send: 100 EUR, Amount receive: 5301000 INR</span>
+                                </div>
+                            </div>
+                            <div class="account__exchange-info-state account__exchange-info-state--awaiting">
+                                <img src="images/clock.svg" alt="">
+                                <span>AWAITING PAYMENT</span>
+                            </div>
+                        </div>
+                        <div class="account__exchange-info-item">
+                            <div class="account__exchange-info-content">
+                                <div class="account__exchange-info-method">
+                                    <img src="images/skirll2.png" alt="" class="first">
+                                    <img src="images/arrow-right.svg" alt="" class="second">
+                                    <img src="images/paytm2.png" alt="" class="third">
+                                </div>
+                                <div class="account__exchange-info-detail">
+                                    <a href="#">Exchange #ADHDAKAJAK72911190</a>
+                                    <span>Amount send: 100 EUR, Amount receive: 5301000 INR</span>
+                                </div>
+                            </div>
+                            <div class="account__exchange-info-state account__exchange-info-state--time-out">
+                                <img src="images/time-out.svg" alt="">
+                                <span>TIME OUT</span>
+                            </div>
+                        </div>
+                        <div class="account__exchange-info-item">
+                            <div class="account__exchange-info-content">
+                                <div class="account__exchange-info-method">
+                                    <img src="images/skirll2.png" alt="" class="first">
+                                    <img src="images/arrow-right.svg" alt="" class="second">
+                                    <img src="images/paytm2.png" alt="" class="third">
+                                </div>
+                                <div class="account__exchange-info-detail">
+                                    <a href="#">Exchange #ADHDAKAJAK72911190</a>
+                                    <span>Amount send: 100 EUR, Amount receive: 5301000 INR</span>
+                                </div>
+                            </div>
+                            <div class="account__exchange-info-state account__exchange-info-state--completed">
+                                <img src="images/completed.svg" alt="">
+                                <span>COMPLETED</span>
+                            </div>
+                        </div>
+                        <div class="account__exchange-info-item">
+                            <div class="account__exchange-info-content">
+                                <div class="account__exchange-info-method">
+                                    <img src="images/skirll2.png" alt="" class="first">
+                                    <img src="images/arrow-right.svg" alt="" class="second">
+                                    <img src="images/paytm2.png" alt="" class="third">
+                                </div>
+                                <div class="account__exchange-info-detail">
+                                    <a href="#">Exchange #ADHDAKAJAK72911190</a>
+                                    <span>Amount send: 100 EUR, Amount receive: 5301000 INR</span>
+                                </div>
+                            </div>
+                            <div class="account__exchange-info-state account__exchange-info-state--processing">
+                                <img src="images/clock.svg" alt="">
+                                <span>PROCESSING</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account__exchange-info-paginate">
+                        <a href="#" class="account__exchange-info-page">1</a>
+                        <a href="#" class="account__exchange-info-page">2</a>
+                        <a href="#" class="account__exchange-info-page">3</a>
+                        <a href="#" class="account__exchange-info-dots">. . .</a>
+                        <a href="#" class="account__exchange-info-next">
+                            <img src="images/double-arrow-right.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>COPYRIGHT © 2021 TFAST.COM.VN - ALL RIGHTS RESERVED.</footer>
+    <script>
+        $('#search_checkin, #search_checkout').daterangepicker({
+            autoApply: true,
+            showDropdowns: true,
+            showWeekNumbers: true,
+            showISOWeekNumbers: true,
+            autoUpdateInput: false,
+            alwaysShowCalendars: true,
+            maxDate: moment().format("YYYY-MM-DD"),
+            maxYear: parseInt(moment().format('YYYY'), 10),
+            locale: {
+                "format": "YYYY-MM-DD",
+                "daysOfWeek": [
+                    "Su",
+                    "Mo",
+                    "Tu",
+                    "We",
+                    "Th",
+                    "Fr",
+                    "Sa"
+                ],
+                "firstDay": 1
+            },
+        }, function(start, end, label) {
+            let selectedStartDate = start.format('YYYY-MM-DD');
+            let selectedEndDate = end.format('YYYY-MM-DD');
+
+            $checkinInput = $('#search_checkin');
+            $checkoutInput = $('#search_checkout');
+
+            $checkinInput.val(selectedStartDate);
+            $checkoutInput.val(selectedEndDate);
+        });
+    </script>
+</body>
+</html>

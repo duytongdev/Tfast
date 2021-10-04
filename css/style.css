@@ -544,7 +544,7 @@ pre code {
   overflow-y: scroll;
 }
 
-.container, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
+.container, .login, .forgot-password, .create-your-account, .account, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -552,22 +552,22 @@ pre code {
   margin-left: auto;
 }
 @media (min-width: 576px) {
-  .container, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
+  .container, .login, .forgot-password, .create-your-account, .account, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
+  .container, .login, .forgot-password, .create-your-account, .account, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
+  .container, .login, .forgot-password, .create-your-account, .account, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
+  .container, .login, .forgot-password, .create-your-account, .account, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
     max-width: 1140px;
   }
 }
@@ -580,7 +580,7 @@ pre code {
   margin-left: auto;
 }
 
-.row, .exchange__grid, .contact__content, .feedback__main, .track__grid, .incorporation__group, .news-board__grid {
+.row, .login__grid, .forgot-password__grid, .create-your-account__grid, .account__grid, .exchange__grid, .contact__content, .feedback__main, .track__grid, .incorporation__group, .news-board__grid {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -598,9 +598,9 @@ pre code {
 }
 
 .col-xl,
-.col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .track__info, .col-xl-6, .col-xl-5, .col-xl-4, .track__form, .col-xl-3, .col-xl-2, .contact__support, .col-xl-1, .col-lg,
+.col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .account__statics, .account__profile, .col-xl-7, .forgot-password__card, .track__info, .col-xl-6, .col-xl-5, .col-xl-4, .track__form, .col-xl-3, .col-xl-2, .contact__support, .col-xl-1, .col-lg,
 .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .exchange__item--form, .feedback__submit button, .feedback__content, .news-board__element--recevie, .col-lg-7, .col-lg-6, .contact__form, .col-lg-5, .col-lg-4, .exchange__item--guild, .feedback__info, .news-board__element, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
-.col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .incorporation__element, .col-md-3, .col-md-2, .col-md-1, .col-sm,
+.col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .create-your-account__card, .col-md-8, .login__card, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .incorporation__element, .col-md-3, .col-md-2, .col-md-1, .col-sm,
 .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col,
 .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
   position: relative;
@@ -1015,12 +1015,12 @@ pre code {
     max-width: 58.3333333333%;
   }
 
-  .col-md-8, .news-board__element--recevie {
+  .col-md-8, .login__card, .news-board__element--recevie {
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
 
-  .col-md-9 {
+  .col-md-9, .create-your-account__card {
     flex: 0 0 75%;
     max-width: 75%;
   }
@@ -1372,12 +1372,12 @@ pre code {
     max-width: 50%;
   }
 
-  .col-xl-7, .track__info {
+  .col-xl-7, .forgot-password__card, .track__info {
     flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
   }
 
-  .col-xl-8 {
+  .col-xl-8, .account__statics, .account__profile {
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
@@ -1867,15 +1867,19 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-prepend > .form-control-plaintext.input-group-text,
 .input-group-sm > .input-group-append > .form-control-plaintext.input-group-text,
 .input-group-sm > .input-group-prepend > .form-control-plaintext.btn,
+.input-group-sm > .input-group-prepend > .form-control-plaintext.account__search,
 .input-group-sm > .input-group-prepend > button.form-control-plaintext,
 .input-group-sm > .input-group-append > .form-control-plaintext.btn,
+.input-group-sm > .input-group-append > .form-control-plaintext.account__search,
 .input-group-sm > .input-group-append > button.form-control-plaintext, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, .exchange__form-group .input-group-lg > input.form-control-plaintext, .input-group-lg > input.form-control-plaintext,
 .input-group-lg > textarea.form-control-plaintext,
 .input-group-lg > .input-group-prepend > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-append > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-prepend > .form-control-plaintext.btn,
+.input-group-lg > .input-group-prepend > .form-control-plaintext.account__search,
 .input-group-lg > .input-group-prepend > button.form-control-plaintext,
 .input-group-lg > .input-group-append > .form-control-plaintext.btn,
+.input-group-lg > .input-group-append > .form-control-plaintext.account__search,
 .input-group-lg > .input-group-append > button.form-control-plaintext {
   padding-right: 0;
   padding-left: 0;
@@ -1886,9 +1890,17 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
+.login__footer .input-group-sm > .input-group-prepend > button,
+.forgot-password__footer .input-group-sm > .input-group-prepend > button,
+.create-your-account__footer .input-group-sm > .input-group-prepend > button,
+.input-group-sm > .input-group-prepend > .account__search,
 .exchange__submit .input-group-sm > .input-group-prepend > button,
 .input-group-sm > .input-group-prepend > button,
 .input-group-sm > .input-group-append > .btn,
+.login__footer .input-group-sm > .input-group-append > button,
+.forgot-password__footer .input-group-sm > .input-group-append > button,
+.create-your-account__footer .input-group-sm > .input-group-append > button,
+.input-group-sm > .input-group-append > .account__search,
 .exchange__submit .input-group-sm > .input-group-append > button,
 .input-group-sm > .input-group-append > button {
   padding: 0.25rem 0.5rem;
@@ -1901,7 +1913,9 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-sm > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]),
-.input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]) {
+.input-group-sm > .input-group-prepend > select.account__search:not([size]):not([multiple]),
+.input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]),
+.input-group-sm > .input-group-append > select.account__search:not([size]):not([multiple]) {
   height: calc(1.8125rem + 2px);
 }
 
@@ -1910,9 +1924,17 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
+.login__footer .input-group-lg > .input-group-prepend > button,
+.forgot-password__footer .input-group-lg > .input-group-prepend > button,
+.create-your-account__footer .input-group-lg > .input-group-prepend > button,
+.input-group-lg > .input-group-prepend > .account__search,
 .exchange__submit .input-group-lg > .input-group-prepend > button,
 .input-group-lg > .input-group-prepend > button,
 .input-group-lg > .input-group-append > .btn,
+.login__footer .input-group-lg > .input-group-append > button,
+.forgot-password__footer .input-group-lg > .input-group-append > button,
+.create-your-account__footer .input-group-lg > .input-group-append > button,
+.input-group-lg > .input-group-append > .account__search,
 .exchange__submit .input-group-lg > .input-group-append > button,
 .input-group-lg > .input-group-append > button {
   padding: 0.5rem 1rem;
@@ -1925,7 +1947,9 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .input-group-lg > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.btn:not([size]):not([multiple]),
-.input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]) {
+.input-group-lg > .input-group-prepend > select.account__search:not([size]):not([multiple]),
+.input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]),
+.input-group-lg > .input-group-append > select.account__search:not([size]):not([multiple]) {
   height: calc(2.875rem + 2px);
 }
 
@@ -2234,7 +2258,7 @@ textarea.is-invalid ~ .invalid-tooltip,
   }
 }
 
-.btn, .exchange__submit button, button {
+.btn, .login__footer button, .forgot-password__footer button, .create-your-account__footer button, .account__search, .exchange__submit button, button {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -2248,24 +2272,25 @@ textarea.is-invalid ~ .invalid-tooltip,
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.btn:hover, button:hover, .btn:focus, button:focus {
+.btn:hover, .account__search:hover, button:hover, .btn:focus, .account__search:focus, button:focus {
   text-decoration: none;
 }
-.btn:focus, button:focus, .btn.focus, button.focus {
+.btn:focus, .account__search:focus, button:focus, .btn.focus, .focus.account__search, button.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-.btn.disabled, button.disabled, .btn:disabled, button:disabled {
+.btn.disabled, .disabled.account__search, button.disabled, .btn:disabled, .account__search:disabled, button:disabled {
   opacity: 0.65;
 }
-.btn:not(:disabled):not(.disabled), button:not(:disabled):not(.disabled) {
+.btn:not(:disabled):not(.disabled), .account__search:not(:disabled):not(.disabled), button:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
-.btn:not(:disabled):not(.disabled):active, button:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active, button:not(:disabled):not(.disabled).active {
+.btn:not(:disabled):not(.disabled):active, .account__search:not(:disabled):not(.disabled):active, button:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active, .account__search:not(:disabled):not(.disabled).active, button:not(:disabled):not(.disabled).active {
   background-image: none;
 }
-a.btn.disabled,
-fieldset:disabled a.btn {
+a.btn.disabled, a.disabled.account__search,
+fieldset:disabled a.btn,
+fieldset:disabled a.account__search {
   pointer-events: none;
 }
 
@@ -2721,14 +2746,14 @@ fieldset:disabled a.btn {
   color: #6c757d;
 }
 
-.btn-lg, .btn-group-lg > .btn, .exchange__submit .btn-group-lg > button, .btn-group-lg > button {
+.btn-lg, .btn-group-lg > .btn, .login__footer .btn-group-lg > button, .forgot-password__footer .btn-group-lg > button, .create-your-account__footer .btn-group-lg > button, .btn-group-lg > .account__search, .exchange__submit .btn-group-lg > button, .btn-group-lg > button {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
 
-.btn-sm, .btn-group-sm > .btn, .exchange__submit .btn-group-sm > button, .btn-group-sm > button {
+.btn-sm, .btn-group-sm > .btn, .login__footer .btn-group-sm > button, .forgot-password__footer .btn-group-sm > button, .create-your-account__footer .btn-group-sm > button, .btn-group-sm > .account__search, .exchange__submit .btn-group-sm > button, .btn-group-sm > button {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2948,50 +2973,158 @@ tbody.collapse.show {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .exchange__submit .btn-group > button, .btn-group > button,
+.btn-group > .btn, .login__footer .btn-group > button, .forgot-password__footer .btn-group > button, .create-your-account__footer .btn-group > button, .btn-group > .account__search, .exchange__submit .btn-group > button, .btn-group > button,
 .btn-group-vertical > .btn,
+.login__footer .btn-group-vertical > button,
+.forgot-password__footer .btn-group-vertical > button,
+.create-your-account__footer .btn-group-vertical > button,
+.btn-group-vertical > .account__search,
 .exchange__submit .btn-group-vertical > button,
 .btn-group-vertical > button {
   position: relative;
   flex: 0 1 auto;
 }
-.btn-group > .btn:hover, .exchange__submit .btn-group > button:hover, .btn-group > button:hover,
+.btn-group > .btn:hover, .login__footer .btn-group > button:hover, .forgot-password__footer .btn-group > button:hover, .create-your-account__footer .btn-group > button:hover, .btn-group > .account__search:hover, .exchange__submit .btn-group > button:hover, .btn-group > button:hover,
 .btn-group-vertical > .btn:hover,
+.login__footer .btn-group-vertical > button:hover,
+.forgot-password__footer .btn-group-vertical > button:hover,
+.create-your-account__footer .btn-group-vertical > button:hover,
+.btn-group-vertical > .account__search:hover,
 .exchange__submit .btn-group-vertical > button:hover,
 .btn-group-vertical > button:hover {
   z-index: 1;
 }
-.btn-group > .btn:focus, .exchange__submit .btn-group > button:focus, .btn-group > button:focus, .btn-group > .btn:active, .exchange__submit .btn-group > button:active, .btn-group > button:active, .btn-group > .btn.active, .exchange__submit .btn-group > button.active, .btn-group > button.active,
+.btn-group > .btn:focus, .login__footer .btn-group > button:focus, .forgot-password__footer .btn-group > button:focus, .create-your-account__footer .btn-group > button:focus, .btn-group > .account__search:focus, .exchange__submit .btn-group > button:focus, .btn-group > button:focus, .btn-group > .btn:active, .login__footer .btn-group > button:active, .forgot-password__footer .btn-group > button:active, .create-your-account__footer .btn-group > button:active, .btn-group > .account__search:active, .exchange__submit .btn-group > button:active, .btn-group > button:active, .btn-group > .btn.active, .login__footer .btn-group > button.active, .forgot-password__footer .btn-group > button.active, .create-your-account__footer .btn-group > button.active, .btn-group > .active.account__search, .exchange__submit .btn-group > button.active, .btn-group > button.active,
 .btn-group-vertical > .btn:focus,
+.login__footer .btn-group-vertical > button:focus,
+.forgot-password__footer .btn-group-vertical > button:focus,
+.create-your-account__footer .btn-group-vertical > button:focus,
+.btn-group-vertical > .account__search:focus,
 .exchange__submit .btn-group-vertical > button:focus,
 .btn-group-vertical > button:focus,
 .btn-group-vertical > .btn:active,
+.login__footer .btn-group-vertical > button:active,
+.forgot-password__footer .btn-group-vertical > button:active,
+.create-your-account__footer .btn-group-vertical > button:active,
+.btn-group-vertical > .account__search:active,
 .exchange__submit .btn-group-vertical > button:active,
 .btn-group-vertical > button:active,
 .btn-group-vertical > .btn.active,
+.login__footer .btn-group-vertical > button.active,
+.forgot-password__footer .btn-group-vertical > button.active,
+.create-your-account__footer .btn-group-vertical > button.active,
+.btn-group-vertical > .active.account__search,
 .exchange__submit .btn-group-vertical > button.active,
 .btn-group-vertical > button.active {
   z-index: 1;
 }
-.btn-group .btn + .btn, .btn-group .exchange__submit button + .btn, .btn-group .exchange__submit .btn + button, .btn-group .exchange__submit button + button, .btn-group button + .btn, .btn-group .btn + button, .btn-group button + button,
+.btn-group .btn + .btn, .btn-group .login__footer button + .btn, .login__footer .btn-group button + .btn, .btn-group .login__footer .btn + button, .login__footer .btn-group .btn + button, .btn-group .login__footer button + button, .login__footer .btn-group button + button, .btn-group .forgot-password__footer button + .btn, .btn-group .forgot-password__footer .login__footer button + button, .login__footer .btn-group .forgot-password__footer button + button, .forgot-password__footer .btn-group button + .btn, .forgot-password__footer .btn-group .login__footer button + button, .login__footer .forgot-password__footer .btn-group button + button, .btn-group .forgot-password__footer .btn + button, .btn-group .forgot-password__footer .login__footer button + button, .login__footer .btn-group .forgot-password__footer button + button, .forgot-password__footer .btn-group .btn + button, .forgot-password__footer .btn-group .login__footer button + button, .login__footer .forgot-password__footer .btn-group button + button, .btn-group .forgot-password__footer button + button, .forgot-password__footer .btn-group button + button, .btn-group .create-your-account__footer button + .btn, .btn-group .create-your-account__footer .login__footer button + button, .login__footer .btn-group .create-your-account__footer button + button, .btn-group .create-your-account__footer .forgot-password__footer button + button, .forgot-password__footer .btn-group .create-your-account__footer button + button, .btn-group .create-your-account__footer .btn + button, .btn-group .create-your-account__footer .login__footer button + button, .login__footer .btn-group .create-your-account__footer button + button, .btn-group .create-your-account__footer .forgot-password__footer button + button, .forgot-password__footer .btn-group .create-your-account__footer button + button, .btn-group .create-your-account__footer button + button, .btn-group .account__search + .btn, .btn-group .login__footer .account__search + button, .login__footer .btn-group .account__search + button, .btn-group .forgot-password__footer .account__search + button, .forgot-password__footer .btn-group .account__search + button, .btn-group .create-your-account__footer .account__search + button, .btn-group .btn + .account__search, .btn-group .login__footer button + .account__search, .login__footer .btn-group button + .account__search, .btn-group .forgot-password__footer button + .account__search, .forgot-password__footer .btn-group button + .account__search, .btn-group .create-your-account__footer button + .account__search, .btn-group .account__search + .account__search, .btn-group .exchange__submit button + .btn, .btn-group .exchange__submit .login__footer button + button, .login__footer .btn-group .exchange__submit button + button, .btn-group .exchange__submit .forgot-password__footer button + button, .forgot-password__footer .btn-group .exchange__submit button + button, .btn-group .exchange__submit button + .account__search, .btn-group .exchange__submit .btn + button, .btn-group .exchange__submit .login__footer button + button, .login__footer .btn-group .exchange__submit button + button, .btn-group .exchange__submit .forgot-password__footer button + button, .forgot-password__footer .btn-group .exchange__submit button + button, .btn-group .exchange__submit .account__search + button, .btn-group .exchange__submit button + button, .btn-group button + .btn, .btn-group .login__footer button + button, .login__footer .btn-group button + button, .btn-group .forgot-password__footer button + button, .forgot-password__footer .btn-group button + button, .btn-group button + .account__search, .btn-group .btn + button, .btn-group .login__footer button + button, .login__footer .btn-group button + button, .btn-group .forgot-password__footer button + button, .forgot-password__footer .btn-group button + button, .btn-group .account__search + button, .btn-group button + button,
 .btn-group .btn + .btn-group,
+.btn-group .login__footer button + .btn-group,
+.login__footer .btn-group button + .btn-group,
+.btn-group .forgot-password__footer button + .btn-group,
+.forgot-password__footer .btn-group button + .btn-group,
+.btn-group .create-your-account__footer button + .btn-group,
+.btn-group .account__search + .btn-group,
 .btn-group .exchange__submit button + .btn-group,
 .btn-group button + .btn-group,
 .btn-group .btn-group + .btn,
+.btn-group .login__footer .btn-group + button,
+.login__footer .btn-group .btn-group + button,
+.btn-group .forgot-password__footer .btn-group + button,
+.forgot-password__footer .btn-group .btn-group + button,
+.btn-group .create-your-account__footer .btn-group + button,
+.btn-group .btn-group + .account__search,
 .btn-group .exchange__submit .btn-group + button,
 .btn-group .btn-group + button,
 .btn-group .btn-group + .btn-group,
 .btn-group-vertical .btn + .btn,
+.btn-group-vertical .login__footer button + .btn,
+.login__footer .btn-group-vertical button + .btn,
+.btn-group-vertical .login__footer .btn + button,
+.login__footer .btn-group-vertical .btn + button,
+.btn-group-vertical .login__footer button + button,
+.login__footer .btn-group-vertical button + button,
+.btn-group-vertical .forgot-password__footer button + .btn,
+.btn-group-vertical .forgot-password__footer .login__footer button + button,
+.login__footer .btn-group-vertical .forgot-password__footer button + button,
+.forgot-password__footer .btn-group-vertical button + .btn,
+.forgot-password__footer .btn-group-vertical .login__footer button + button,
+.login__footer .forgot-password__footer .btn-group-vertical button + button,
+.btn-group-vertical .forgot-password__footer .btn + button,
+.btn-group-vertical .forgot-password__footer .login__footer button + button,
+.login__footer .btn-group-vertical .forgot-password__footer button + button,
+.forgot-password__footer .btn-group-vertical .btn + button,
+.forgot-password__footer .btn-group-vertical .login__footer button + button,
+.login__footer .forgot-password__footer .btn-group-vertical button + button,
+.btn-group-vertical .forgot-password__footer button + button,
+.forgot-password__footer .btn-group-vertical button + button,
+.btn-group-vertical .create-your-account__footer button + .btn,
+.btn-group-vertical .create-your-account__footer .login__footer button + button,
+.login__footer .btn-group-vertical .create-your-account__footer button + button,
+.btn-group-vertical .create-your-account__footer .forgot-password__footer button + button,
+.forgot-password__footer .btn-group-vertical .create-your-account__footer button + button,
+.btn-group-vertical .create-your-account__footer .btn + button,
+.btn-group-vertical .create-your-account__footer .login__footer button + button,
+.login__footer .btn-group-vertical .create-your-account__footer button + button,
+.btn-group-vertical .create-your-account__footer .forgot-password__footer button + button,
+.forgot-password__footer .btn-group-vertical .create-your-account__footer button + button,
+.btn-group-vertical .create-your-account__footer button + button,
+.btn-group-vertical .account__search + .btn,
+.btn-group-vertical .login__footer .account__search + button,
+.login__footer .btn-group-vertical .account__search + button,
+.btn-group-vertical .forgot-password__footer .account__search + button,
+.forgot-password__footer .btn-group-vertical .account__search + button,
+.btn-group-vertical .create-your-account__footer .account__search + button,
+.btn-group-vertical .btn + .account__search,
+.btn-group-vertical .login__footer button + .account__search,
+.login__footer .btn-group-vertical button + .account__search,
+.btn-group-vertical .forgot-password__footer button + .account__search,
+.forgot-password__footer .btn-group-vertical button + .account__search,
+.btn-group-vertical .create-your-account__footer button + .account__search,
+.btn-group-vertical .account__search + .account__search,
 .btn-group-vertical .exchange__submit button + .btn,
+.btn-group-vertical .exchange__submit .login__footer button + button,
+.login__footer .btn-group-vertical .exchange__submit button + button,
+.btn-group-vertical .exchange__submit .forgot-password__footer button + button,
+.forgot-password__footer .btn-group-vertical .exchange__submit button + button,
+.btn-group-vertical .exchange__submit button + .account__search,
 .btn-group-vertical .exchange__submit .btn + button,
+.btn-group-vertical .exchange__submit .login__footer button + button,
+.login__footer .btn-group-vertical .exchange__submit button + button,
+.btn-group-vertical .exchange__submit .forgot-password__footer button + button,
+.forgot-password__footer .btn-group-vertical .exchange__submit button + button,
+.btn-group-vertical .exchange__submit .account__search + button,
 .btn-group-vertical .exchange__submit button + button,
 .btn-group-vertical button + .btn,
+.btn-group-vertical .login__footer button + button,
+.login__footer .btn-group-vertical button + button,
+.btn-group-vertical .forgot-password__footer button + button,
+.forgot-password__footer .btn-group-vertical button + button,
+.btn-group-vertical button + .account__search,
 .btn-group-vertical .btn + button,
+.btn-group-vertical .login__footer button + button,
+.login__footer .btn-group-vertical button + button,
+.btn-group-vertical .forgot-password__footer button + button,
+.forgot-password__footer .btn-group-vertical button + button,
+.btn-group-vertical .account__search + button,
 .btn-group-vertical button + button,
 .btn-group-vertical .btn + .btn-group,
+.btn-group-vertical .login__footer button + .btn-group,
+.login__footer .btn-group-vertical button + .btn-group,
+.btn-group-vertical .forgot-password__footer button + .btn-group,
+.forgot-password__footer .btn-group-vertical button + .btn-group,
+.btn-group-vertical .create-your-account__footer button + .btn-group,
+.btn-group-vertical .account__search + .btn-group,
 .btn-group-vertical .exchange__submit button + .btn-group,
 .btn-group-vertical button + .btn-group,
 .btn-group-vertical .btn-group + .btn,
+.btn-group-vertical .login__footer .btn-group + button,
+.login__footer .btn-group-vertical .btn-group + button,
+.btn-group-vertical .forgot-password__footer .btn-group + button,
+.forgot-password__footer .btn-group-vertical .btn-group + button,
+.btn-group-vertical .create-your-account__footer .btn-group + button,
+.btn-group-vertical .btn-group + .account__search,
 .btn-group-vertical .exchange__submit .btn-group + button,
 .btn-group-vertical .btn-group + button,
 .btn-group-vertical .btn-group + .btn-group {
@@ -3007,17 +3140,19 @@ tbody.collapse.show {
   width: auto;
 }
 
-.btn-group > .btn:first-child, .exchange__submit .btn-group > button:first-child, .btn-group > button:first-child {
+.btn-group > .btn:first-child, .login__footer .btn-group > button:first-child, .forgot-password__footer .btn-group > button:first-child, .create-your-account__footer .btn-group > button:first-child, .btn-group > .account__search:first-child, .exchange__submit .btn-group > button:first-child, .btn-group > button:first-child {
   margin-left: 0;
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .exchange__submit .btn-group > button:not(:last-child):not(.dropdown-toggle), .btn-group > button:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .login__footer .btn-group > button:not(:last-child):not(.dropdown-toggle), .forgot-password__footer .btn-group > button:not(:last-child):not(.dropdown-toggle), .create-your-account__footer .btn-group > button:not(:last-child):not(.dropdown-toggle), .btn-group > .account__search:not(:last-child):not(.dropdown-toggle), .exchange__submit .btn-group > button:not(:last-child):not(.dropdown-toggle), .btn-group > button:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
+.btn-group > .btn-group:not(:last-child) > .account__search,
 .btn-group > .btn-group:not(:last-child) > button {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:not(:first-child), .exchange__submit .btn-group > button:not(:first-child), .btn-group > button:not(:first-child),
+.btn-group > .btn:not(:first-child), .login__footer .btn-group > button:not(:first-child), .forgot-password__footer .btn-group > button:not(:first-child), .create-your-account__footer .btn-group > button:not(:first-child), .btn-group > .account__search:not(:first-child), .exchange__submit .btn-group > button:not(:first-child), .btn-group > button:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn,
+.btn-group > .btn-group:not(:first-child) > .account__search,
 .btn-group > .btn-group:not(:first-child) > button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -3031,12 +3166,12 @@ tbody.collapse.show {
   margin-left: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > button + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .account__search + .dropdown-toggle-split, .btn-group-sm > button + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > button + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .account__search + .dropdown-toggle-split, .btn-group-lg > button + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3046,39 +3181,45 @@ tbody.collapse.show {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical .btn, .btn-group-vertical button,
+.btn-group-vertical .btn, .btn-group-vertical .account__search, .btn-group-vertical button,
 .btn-group-vertical .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn + .btn, .btn-group-vertical > button + .btn, .btn-group-vertical > .btn + button, .btn-group-vertical > button + button,
+.btn-group-vertical > .btn + .btn, .btn-group-vertical > .account__search + .btn, .btn-group-vertical > .btn + .account__search, .btn-group-vertical > .account__search + .account__search, .btn-group-vertical > button + .btn, .btn-group-vertical > button + .account__search, .btn-group-vertical > .btn + button, .btn-group-vertical > .account__search + button, .btn-group-vertical > button + button,
 .btn-group-vertical > .btn + .btn-group,
+.btn-group-vertical > .account__search + .btn-group,
 .btn-group-vertical > button + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
+.btn-group-vertical > .btn-group + .account__search,
 .btn-group-vertical > .btn-group + button,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .exchange__submit .btn-group-vertical > button:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > button:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .login__footer .btn-group-vertical > button:not(:last-child):not(.dropdown-toggle), .forgot-password__footer .btn-group-vertical > button:not(:last-child):not(.dropdown-toggle), .create-your-account__footer .btn-group-vertical > button:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .account__search:not(:last-child):not(.dropdown-toggle), .exchange__submit .btn-group-vertical > button:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > button:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
+.btn-group-vertical > .btn-group:not(:last-child) > .account__search,
 .btn-group-vertical > .btn-group:not(:last-child) > button {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn:not(:first-child), .exchange__submit .btn-group-vertical > button:not(:first-child), .btn-group-vertical > button:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .login__footer .btn-group-vertical > button:not(:first-child), .forgot-password__footer .btn-group-vertical > button:not(:first-child), .create-your-account__footer .btn-group-vertical > button:not(:first-child), .btn-group-vertical > .account__search:not(:first-child), .exchange__submit .btn-group-vertical > button:not(:first-child), .btn-group-vertical > button:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
+.btn-group-vertical > .btn-group:not(:first-child) > .account__search,
 .btn-group-vertical > .btn-group:not(:first-child) > button {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group-toggle > .btn, .exchange__submit .btn-group-toggle > button, .btn-group-toggle > button,
+.btn-group-toggle > .btn, .login__footer .btn-group-toggle > button, .forgot-password__footer .btn-group-toggle > button, .create-your-account__footer .btn-group-toggle > button, .btn-group-toggle > .account__search, .exchange__submit .btn-group-toggle > button, .btn-group-toggle > button,
 .btn-group-toggle > .btn-group > .btn,
+.btn-group-toggle > .btn-group > .account__search,
 .btn-group-toggle > .btn-group > button {
   margin-bottom: 0;
 }
-.btn-group-toggle > .btn input[type=radio], .btn-group-toggle > button input[type=radio],
+.btn-group-toggle > .btn input[type=radio], .btn-group-toggle > .account__search input[type=radio], .btn-group-toggle > button input[type=radio],
 .btn-group-toggle > .btn input[type=checkbox],
+.btn-group-toggle > .account__search input[type=checkbox],
 .btn-group-toggle > button input[type=checkbox],
 .btn-group-toggle > .btn-group > .btn input[type=radio],
 .btn-group-toggle > .btn-group > .btn input[type=checkbox] {
@@ -3162,32 +3303,121 @@ tbody.collapse.show {
 .input-group-append {
   display: flex;
 }
-.input-group-prepend .btn, .input-group-prepend button,
+.input-group-prepend .btn, .input-group-prepend .account__search, .input-group-prepend button,
 .input-group-append .btn,
+.input-group-append .account__search,
 .input-group-append button {
   position: relative;
   z-index: 2;
 }
-.input-group-prepend .btn + .btn, .input-group-prepend .exchange__submit button + .btn, .input-group-prepend .exchange__submit .btn + button, .input-group-prepend .exchange__submit button + button, .input-group-prepend button + .btn, .input-group-prepend .btn + button, .input-group-prepend button + button,
+.input-group-prepend .btn + .btn, .input-group-prepend .login__footer button + .btn, .login__footer .input-group-prepend button + .btn, .input-group-prepend .login__footer .btn + button, .login__footer .input-group-prepend .btn + button, .input-group-prepend .login__footer button + button, .login__footer .input-group-prepend button + button, .input-group-prepend .forgot-password__footer button + .btn, .input-group-prepend .forgot-password__footer .login__footer button + button, .login__footer .input-group-prepend .forgot-password__footer button + button, .forgot-password__footer .input-group-prepend button + .btn, .forgot-password__footer .input-group-prepend .login__footer button + button, .login__footer .forgot-password__footer .input-group-prepend button + button, .input-group-prepend .forgot-password__footer .btn + button, .input-group-prepend .forgot-password__footer .login__footer button + button, .login__footer .input-group-prepend .forgot-password__footer button + button, .forgot-password__footer .input-group-prepend .btn + button, .forgot-password__footer .input-group-prepend .login__footer button + button, .login__footer .forgot-password__footer .input-group-prepend button + button, .input-group-prepend .forgot-password__footer button + button, .forgot-password__footer .input-group-prepend button + button, .input-group-prepend .create-your-account__footer button + .btn, .input-group-prepend .create-your-account__footer .login__footer button + button, .login__footer .input-group-prepend .create-your-account__footer button + button, .input-group-prepend .create-your-account__footer .forgot-password__footer button + button, .forgot-password__footer .input-group-prepend .create-your-account__footer button + button, .input-group-prepend .create-your-account__footer .btn + button, .input-group-prepend .create-your-account__footer .login__footer button + button, .login__footer .input-group-prepend .create-your-account__footer button + button, .input-group-prepend .create-your-account__footer .forgot-password__footer button + button, .forgot-password__footer .input-group-prepend .create-your-account__footer button + button, .input-group-prepend .create-your-account__footer button + button, .input-group-prepend .account__search + .btn, .input-group-prepend .login__footer .account__search + button, .login__footer .input-group-prepend .account__search + button, .input-group-prepend .forgot-password__footer .account__search + button, .forgot-password__footer .input-group-prepend .account__search + button, .input-group-prepend .create-your-account__footer .account__search + button, .input-group-prepend .btn + .account__search, .input-group-prepend .login__footer button + .account__search, .login__footer .input-group-prepend button + .account__search, .input-group-prepend .forgot-password__footer button + .account__search, .forgot-password__footer .input-group-prepend button + .account__search, .input-group-prepend .create-your-account__footer button + .account__search, .input-group-prepend .account__search + .account__search, .input-group-prepend .exchange__submit button + .btn, .input-group-prepend .exchange__submit .login__footer button + button, .login__footer .input-group-prepend .exchange__submit button + button, .input-group-prepend .exchange__submit .forgot-password__footer button + button, .forgot-password__footer .input-group-prepend .exchange__submit button + button, .input-group-prepend .exchange__submit button + .account__search, .input-group-prepend .exchange__submit .btn + button, .input-group-prepend .exchange__submit .login__footer button + button, .login__footer .input-group-prepend .exchange__submit button + button, .input-group-prepend .exchange__submit .forgot-password__footer button + button, .forgot-password__footer .input-group-prepend .exchange__submit button + button, .input-group-prepend .exchange__submit .account__search + button, .input-group-prepend .exchange__submit button + button, .input-group-prepend button + .btn, .input-group-prepend .login__footer button + button, .login__footer .input-group-prepend button + button, .input-group-prepend .forgot-password__footer button + button, .forgot-password__footer .input-group-prepend button + button, .input-group-prepend button + .account__search, .input-group-prepend .btn + button, .input-group-prepend .login__footer button + button, .login__footer .input-group-prepend button + button, .input-group-prepend .forgot-password__footer button + button, .forgot-password__footer .input-group-prepend button + button, .input-group-prepend .account__search + button, .input-group-prepend button + button,
 .input-group-prepend .btn + .input-group-text,
+.input-group-prepend .login__footer button + .input-group-text,
+.login__footer .input-group-prepend button + .input-group-text,
+.input-group-prepend .forgot-password__footer button + .input-group-text,
+.forgot-password__footer .input-group-prepend button + .input-group-text,
+.input-group-prepend .create-your-account__footer button + .input-group-text,
+.input-group-prepend .account__search + .input-group-text,
 .input-group-prepend .exchange__submit button + .input-group-text,
 .input-group-prepend button + .input-group-text,
 .input-group-prepend .input-group-text + .input-group-text,
 .input-group-prepend .input-group-text + .btn,
+.input-group-prepend .login__footer .input-group-text + button,
+.login__footer .input-group-prepend .input-group-text + button,
+.input-group-prepend .forgot-password__footer .input-group-text + button,
+.forgot-password__footer .input-group-prepend .input-group-text + button,
+.input-group-prepend .create-your-account__footer .input-group-text + button,
+.input-group-prepend .input-group-text + .account__search,
 .input-group-prepend .exchange__submit .input-group-text + button,
 .input-group-prepend .input-group-text + button,
 .input-group-append .btn + .btn,
+.input-group-append .login__footer button + .btn,
+.login__footer .input-group-append button + .btn,
+.input-group-append .login__footer .btn + button,
+.login__footer .input-group-append .btn + button,
+.input-group-append .login__footer button + button,
+.login__footer .input-group-append button + button,
+.input-group-append .forgot-password__footer button + .btn,
+.input-group-append .forgot-password__footer .login__footer button + button,
+.login__footer .input-group-append .forgot-password__footer button + button,
+.forgot-password__footer .input-group-append button + .btn,
+.forgot-password__footer .input-group-append .login__footer button + button,
+.login__footer .forgot-password__footer .input-group-append button + button,
+.input-group-append .forgot-password__footer .btn + button,
+.input-group-append .forgot-password__footer .login__footer button + button,
+.login__footer .input-group-append .forgot-password__footer button + button,
+.forgot-password__footer .input-group-append .btn + button,
+.forgot-password__footer .input-group-append .login__footer button + button,
+.login__footer .forgot-password__footer .input-group-append button + button,
+.input-group-append .forgot-password__footer button + button,
+.forgot-password__footer .input-group-append button + button,
+.input-group-append .create-your-account__footer button + .btn,
+.input-group-append .create-your-account__footer .login__footer button + button,
+.login__footer .input-group-append .create-your-account__footer button + button,
+.input-group-append .create-your-account__footer .forgot-password__footer button + button,
+.forgot-password__footer .input-group-append .create-your-account__footer button + button,
+.input-group-append .create-your-account__footer .btn + button,
+.input-group-append .create-your-account__footer .login__footer button + button,
+.login__footer .input-group-append .create-your-account__footer button + button,
+.input-group-append .create-your-account__footer .forgot-password__footer button + button,
+.forgot-password__footer .input-group-append .create-your-account__footer button + button,
+.input-group-append .create-your-account__footer button + button,
+.input-group-append .account__search + .btn,
+.input-group-append .login__footer .account__search + button,
+.login__footer .input-group-append .account__search + button,
+.input-group-append .forgot-password__footer .account__search + button,
+.forgot-password__footer .input-group-append .account__search + button,
+.input-group-append .create-your-account__footer .account__search + button,
+.input-group-append .btn + .account__search,
+.input-group-append .login__footer button + .account__search,
+.login__footer .input-group-append button + .account__search,
+.input-group-append .forgot-password__footer button + .account__search,
+.forgot-password__footer .input-group-append button + .account__search,
+.input-group-append .create-your-account__footer button + .account__search,
+.input-group-append .account__search + .account__search,
 .input-group-append .exchange__submit button + .btn,
+.input-group-append .exchange__submit .login__footer button + button,
+.login__footer .input-group-append .exchange__submit button + button,
+.input-group-append .exchange__submit .forgot-password__footer button + button,
+.forgot-password__footer .input-group-append .exchange__submit button + button,
+.input-group-append .exchange__submit button + .account__search,
 .input-group-append .exchange__submit .btn + button,
+.input-group-append .exchange__submit .login__footer button + button,
+.login__footer .input-group-append .exchange__submit button + button,
+.input-group-append .exchange__submit .forgot-password__footer button + button,
+.forgot-password__footer .input-group-append .exchange__submit button + button,
+.input-group-append .exchange__submit .account__search + button,
 .input-group-append .exchange__submit button + button,
 .input-group-append button + .btn,
+.input-group-append .login__footer button + button,
+.login__footer .input-group-append button + button,
+.input-group-append .forgot-password__footer button + button,
+.forgot-password__footer .input-group-append button + button,
+.input-group-append button + .account__search,
 .input-group-append .btn + button,
+.input-group-append .login__footer button + button,
+.login__footer .input-group-append button + button,
+.input-group-append .forgot-password__footer button + button,
+.forgot-password__footer .input-group-append button + button,
+.input-group-append .account__search + button,
 .input-group-append button + button,
 .input-group-append .btn + .input-group-text,
+.input-group-append .login__footer button + .input-group-text,
+.login__footer .input-group-append button + .input-group-text,
+.input-group-append .forgot-password__footer button + .input-group-text,
+.forgot-password__footer .input-group-append button + .input-group-text,
+.input-group-append .create-your-account__footer button + .input-group-text,
+.input-group-append .account__search + .input-group-text,
 .input-group-append .exchange__submit button + .input-group-text,
 .input-group-append button + .input-group-text,
 .input-group-append .input-group-text + .input-group-text,
 .input-group-append .input-group-text + .btn,
+.input-group-append .login__footer .input-group-text + button,
+.login__footer .input-group-append .input-group-text + button,
+.input-group-append .forgot-password__footer .input-group-text + button,
+.forgot-password__footer .input-group-append .input-group-text + button,
+.input-group-append .create-your-account__footer .input-group-text + button,
+.input-group-append .input-group-text + .account__search,
 .input-group-append .exchange__submit .input-group-text + button,
 .input-group-append .input-group-text + button {
   margin-left: -1px;
@@ -3221,24 +3451,28 @@ tbody.collapse.show {
   margin-top: 0;
 }
 
-.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > button,
+.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .account__search, .input-group > .input-group-prepend > button,
 .input-group > .input-group-prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
+.input-group > .input-group-append:not(:last-child) > .account__search,
 .input-group > .input-group-append:not(:last-child) > button,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .account__search:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > button:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.input-group > .input-group-append > .btn, .input-group > .input-group-append > button,
+.input-group > .input-group-append > .btn, .input-group > .input-group-append > .account__search, .input-group > .input-group-append > button,
 .input-group > .input-group-append > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
+.input-group > .input-group-prepend:not(:first-child) > .account__search,
 .input-group > .input-group-prepend:not(:first-child) > button,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.input-group > .input-group-prepend:first-child > .account__search:not(:first-child),
 .input-group > .input-group-prepend:first-child > button:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
@@ -3536,7 +3770,7 @@ tbody.collapse.show {
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
-.navbar > .container, .navbar > .exchange, .navbar > .contact, .navbar > .slideshow__container, .navbar > .feedback__container, .navbar > .track__container, .navbar > .incorporation, .navbar > .news-board, .navbar > .top-nav, .navbar > .header__main,
+.navbar > .container, .navbar > .login, .navbar > .forgot-password, .navbar > .create-your-account, .navbar > .account, .navbar > .exchange, .navbar > .contact, .navbar > .slideshow__container, .navbar > .feedback__container, .navbar > .track__container, .navbar > .incorporation, .navbar > .news-board, .navbar > .top-nav, .navbar > .header__main,
 .navbar > .container-fluid {
   display: flex;
   flex-wrap: wrap;
@@ -3611,7 +3845,7 @@ tbody.collapse.show {
 }
 
 @media (max-width: 575.98px) {
-  .navbar-expand-sm > .container, .navbar-expand-sm > .exchange, .navbar-expand-sm > .contact, .navbar-expand-sm > .slideshow__container, .navbar-expand-sm > .feedback__container, .navbar-expand-sm > .track__container, .navbar-expand-sm > .incorporation, .navbar-expand-sm > .news-board, .navbar-expand-sm > .top-nav, .navbar-expand-sm > .header__main,
+  .navbar-expand-sm > .container, .navbar-expand-sm > .login, .navbar-expand-sm > .forgot-password, .navbar-expand-sm > .create-your-account, .navbar-expand-sm > .account, .navbar-expand-sm > .exchange, .navbar-expand-sm > .contact, .navbar-expand-sm > .slideshow__container, .navbar-expand-sm > .feedback__container, .navbar-expand-sm > .track__container, .navbar-expand-sm > .incorporation, .navbar-expand-sm > .news-board, .navbar-expand-sm > .top-nav, .navbar-expand-sm > .header__main,
 .navbar-expand-sm > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -3636,7 +3870,7 @@ tbody.collapse.show {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-sm > .container, .navbar-expand-sm > .exchange, .navbar-expand-sm > .contact, .navbar-expand-sm > .slideshow__container, .navbar-expand-sm > .feedback__container, .navbar-expand-sm > .track__container, .navbar-expand-sm > .incorporation, .navbar-expand-sm > .news-board, .navbar-expand-sm > .top-nav, .navbar-expand-sm > .header__main,
+  .navbar-expand-sm > .container, .navbar-expand-sm > .login, .navbar-expand-sm > .forgot-password, .navbar-expand-sm > .create-your-account, .navbar-expand-sm > .account, .navbar-expand-sm > .exchange, .navbar-expand-sm > .contact, .navbar-expand-sm > .slideshow__container, .navbar-expand-sm > .feedback__container, .navbar-expand-sm > .track__container, .navbar-expand-sm > .incorporation, .navbar-expand-sm > .news-board, .navbar-expand-sm > .top-nav, .navbar-expand-sm > .header__main,
 .navbar-expand-sm > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -3653,7 +3887,7 @@ tbody.collapse.show {
   }
 }
 @media (max-width: 767.98px) {
-  .navbar-expand-md > .container, .navbar-expand-md > .exchange, .navbar-expand-md > .contact, .navbar-expand-md > .slideshow__container, .navbar-expand-md > .feedback__container, .navbar-expand-md > .track__container, .navbar-expand-md > .incorporation, .navbar-expand-md > .news-board, .navbar-expand-md > .top-nav, .navbar-expand-md > .header__main,
+  .navbar-expand-md > .container, .navbar-expand-md > .login, .navbar-expand-md > .forgot-password, .navbar-expand-md > .create-your-account, .navbar-expand-md > .account, .navbar-expand-md > .exchange, .navbar-expand-md > .contact, .navbar-expand-md > .slideshow__container, .navbar-expand-md > .feedback__container, .navbar-expand-md > .track__container, .navbar-expand-md > .incorporation, .navbar-expand-md > .news-board, .navbar-expand-md > .top-nav, .navbar-expand-md > .header__main,
 .navbar-expand-md > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -3678,7 +3912,7 @@ tbody.collapse.show {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-md > .container, .navbar-expand-md > .exchange, .navbar-expand-md > .contact, .navbar-expand-md > .slideshow__container, .navbar-expand-md > .feedback__container, .navbar-expand-md > .track__container, .navbar-expand-md > .incorporation, .navbar-expand-md > .news-board, .navbar-expand-md > .top-nav, .navbar-expand-md > .header__main,
+  .navbar-expand-md > .container, .navbar-expand-md > .login, .navbar-expand-md > .forgot-password, .navbar-expand-md > .create-your-account, .navbar-expand-md > .account, .navbar-expand-md > .exchange, .navbar-expand-md > .contact, .navbar-expand-md > .slideshow__container, .navbar-expand-md > .feedback__container, .navbar-expand-md > .track__container, .navbar-expand-md > .incorporation, .navbar-expand-md > .news-board, .navbar-expand-md > .top-nav, .navbar-expand-md > .header__main,
 .navbar-expand-md > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -3695,7 +3929,7 @@ tbody.collapse.show {
   }
 }
 @media (max-width: 991.98px) {
-  .navbar-expand-lg > .container, .navbar-expand-lg > .exchange, .navbar-expand-lg > .contact, .navbar-expand-lg > .slideshow__container, .navbar-expand-lg > .feedback__container, .navbar-expand-lg > .track__container, .navbar-expand-lg > .incorporation, .navbar-expand-lg > .news-board, .navbar-expand-lg > .top-nav, .navbar-expand-lg > .header__main,
+  .navbar-expand-lg > .container, .navbar-expand-lg > .login, .navbar-expand-lg > .forgot-password, .navbar-expand-lg > .create-your-account, .navbar-expand-lg > .account, .navbar-expand-lg > .exchange, .navbar-expand-lg > .contact, .navbar-expand-lg > .slideshow__container, .navbar-expand-lg > .feedback__container, .navbar-expand-lg > .track__container, .navbar-expand-lg > .incorporation, .navbar-expand-lg > .news-board, .navbar-expand-lg > .top-nav, .navbar-expand-lg > .header__main,
 .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -3720,7 +3954,7 @@ tbody.collapse.show {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-lg > .container, .navbar-expand-lg > .exchange, .navbar-expand-lg > .contact, .navbar-expand-lg > .slideshow__container, .navbar-expand-lg > .feedback__container, .navbar-expand-lg > .track__container, .navbar-expand-lg > .incorporation, .navbar-expand-lg > .news-board, .navbar-expand-lg > .top-nav, .navbar-expand-lg > .header__main,
+  .navbar-expand-lg > .container, .navbar-expand-lg > .login, .navbar-expand-lg > .forgot-password, .navbar-expand-lg > .create-your-account, .navbar-expand-lg > .account, .navbar-expand-lg > .exchange, .navbar-expand-lg > .contact, .navbar-expand-lg > .slideshow__container, .navbar-expand-lg > .feedback__container, .navbar-expand-lg > .track__container, .navbar-expand-lg > .incorporation, .navbar-expand-lg > .news-board, .navbar-expand-lg > .top-nav, .navbar-expand-lg > .header__main,
 .navbar-expand-lg > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -3737,7 +3971,7 @@ tbody.collapse.show {
   }
 }
 @media (max-width: 1199.98px) {
-  .navbar-expand-xl > .container, .navbar-expand-xl > .exchange, .navbar-expand-xl > .contact, .navbar-expand-xl > .slideshow__container, .navbar-expand-xl > .feedback__container, .navbar-expand-xl > .track__container, .navbar-expand-xl > .incorporation, .navbar-expand-xl > .news-board, .navbar-expand-xl > .top-nav, .navbar-expand-xl > .header__main,
+  .navbar-expand-xl > .container, .navbar-expand-xl > .login, .navbar-expand-xl > .forgot-password, .navbar-expand-xl > .create-your-account, .navbar-expand-xl > .account, .navbar-expand-xl > .exchange, .navbar-expand-xl > .contact, .navbar-expand-xl > .slideshow__container, .navbar-expand-xl > .feedback__container, .navbar-expand-xl > .track__container, .navbar-expand-xl > .incorporation, .navbar-expand-xl > .news-board, .navbar-expand-xl > .top-nav, .navbar-expand-xl > .header__main,
 .navbar-expand-xl > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -3762,7 +3996,7 @@ tbody.collapse.show {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .navbar-expand-xl > .container, .navbar-expand-xl > .exchange, .navbar-expand-xl > .contact, .navbar-expand-xl > .slideshow__container, .navbar-expand-xl > .feedback__container, .navbar-expand-xl > .track__container, .navbar-expand-xl > .incorporation, .navbar-expand-xl > .news-board, .navbar-expand-xl > .top-nav, .navbar-expand-xl > .header__main,
+  .navbar-expand-xl > .container, .navbar-expand-xl > .login, .navbar-expand-xl > .forgot-password, .navbar-expand-xl > .create-your-account, .navbar-expand-xl > .account, .navbar-expand-xl > .exchange, .navbar-expand-xl > .contact, .navbar-expand-xl > .slideshow__container, .navbar-expand-xl > .feedback__container, .navbar-expand-xl > .track__container, .navbar-expand-xl > .incorporation, .navbar-expand-xl > .news-board, .navbar-expand-xl > .top-nav, .navbar-expand-xl > .header__main,
 .navbar-expand-xl > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -3782,7 +4016,7 @@ tbody.collapse.show {
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
-.navbar-expand > .container, .navbar-expand > .exchange, .navbar-expand > .contact, .navbar-expand > .slideshow__container, .navbar-expand > .feedback__container, .navbar-expand > .track__container, .navbar-expand > .incorporation, .navbar-expand > .news-board, .navbar-expand > .top-nav, .navbar-expand > .header__main,
+.navbar-expand > .container, .navbar-expand > .login, .navbar-expand > .forgot-password, .navbar-expand > .create-your-account, .navbar-expand > .account, .navbar-expand > .exchange, .navbar-expand > .contact, .navbar-expand > .slideshow__container, .navbar-expand > .feedback__container, .navbar-expand > .track__container, .navbar-expand > .incorporation, .navbar-expand > .news-board, .navbar-expand > .top-nav, .navbar-expand > .header__main,
 .navbar-expand > .container-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -3801,7 +4035,7 @@ tbody.collapse.show {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
-.navbar-expand > .container, .navbar-expand > .exchange, .navbar-expand > .contact, .navbar-expand > .slideshow__container, .navbar-expand > .feedback__container, .navbar-expand > .track__container, .navbar-expand > .incorporation, .navbar-expand > .news-board, .navbar-expand > .top-nav, .navbar-expand > .header__main,
+.navbar-expand > .container, .navbar-expand > .login, .navbar-expand > .forgot-password, .navbar-expand > .create-your-account, .navbar-expand > .account, .navbar-expand > .exchange, .navbar-expand > .contact, .navbar-expand > .slideshow__container, .navbar-expand > .feedback__container, .navbar-expand > .track__container, .navbar-expand > .incorporation, .navbar-expand > .news-board, .navbar-expand > .top-nav, .navbar-expand > .header__main,
 .navbar-expand > .container-fluid {
   flex-wrap: nowrap;
 }
@@ -4240,7 +4474,7 @@ tbody.collapse.show {
   display: none;
 }
 
-.btn .badge, button .badge {
+.btn .badge, .account__search .badge, button .badge {
   position: relative;
   top: -1px;
 }
@@ -8290,7 +8524,7 @@ a.text-dark:hover, a.text-dark:focus {
     box-shadow: none !important;
   }
 
-  a:not(.btn):not(button) {
+  a:not(.btn):not(.account__search):not(button) {
     text-decoration: underline;
   }
 
@@ -8336,7 +8570,7 @@ h3 {
     min-width: 992px !important;
   }
 
-  .container, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
+  .container, .login, .forgot-password, .create-your-account, .account, .exchange, .contact, .slideshow__container, .feedback__container, .track__container, .incorporation, .news-board, .top-nav, .header__main {
     min-width: 992px !important;
   }
 
@@ -8368,6 +8602,9 @@ body {
   font-size: 13px;
   font-weight: 400;
   color: #58595B;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
@@ -9029,8 +9266,9 @@ footer {
   background-color: #29255e;
   color: #fff;
   text-align: center;
-  padding: 0.5rem;
+  padding: 7px;
   font-size: 14px;
+  margin-top: auto;
 }
 
 .swiper {
@@ -9200,6 +9438,712 @@ footer {
 }
 .exchange__guild {
   margin-top: 1rem;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.75rem;
+  padding-bottom: 3.25rem;
+}
+.account__grid {
+  width: 100%;
+  justify-content: center;
+}
+.account__profile-card {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.375rem;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .account__profile-card {
+    padding: 2rem 2.5rem;
+  }
+}
+.account__profile-content {
+  display: flex;
+}
+.account__profile-info {
+  display: flex;
+  flex-direction: column;
+}
+.account__profile-info--headline {
+  margin-right: 3rem;
+}
+.account__profile-item {
+  display: flex;
+  padding: 0.25rem 0;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .account__profile-item {
+    flex-direction: row;
+  }
+}
+.account__profile-item strong {
+  display: block;
+  width: 175px;
+}
+.account__profile-item a {
+  color: #29255e;
+}
+.account__profile-status span {
+  background-color: #29255e;
+  color: #fff;
+  border-radius: 0.175rem;
+  padding: 0 0.25rem;
+}
+.account__heading {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #E6E7E8;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+.account__statics {
+  margin-top: 3.25rem;
+}
+.account__statics input[name=daterange] {
+  width: 100%;
+}
+.account__daterangepicker {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+@media (min-width: 576px) {
+  .account__daterangepicker {
+    flex-direction: row;
+  }
+}
+.account__input-group {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 576px) {
+  .account__input-group {
+    margin-right: 2.25rem;
+    margin-bottom: 0;
+  }
+}
+.account__input-group img {
+  position: absolute;
+  height: 22px;
+  top: 5px;
+  left: 6px;
+}
+.account__input-group input {
+  font-size: inherit;
+  padding-left: 2.375rem;
+  background-color: #fff;
+  cursor: pointer;
+  color: inherit;
+  border-color: #58595B;
+}
+.account__input-group input:focus {
+  box-shadow: none;
+}
+.account__search {
+  background: linear-gradient(90deg, #2d348a 0%, #315eaa 36.67%, #3471b8 73.59%, #359fd8 100%);
+  color: #fff;
+  border-radius: 0.375rem;
+  border: none;
+  padding: 0 11px 0 11px;
+  height: 33px;
+}
+.account__search img {
+  width: 20px;
+  height: 20px;
+}
+.account__list-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+@media (min-width: 768px) {
+  .account__list-state {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.account__list-state-item {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+@media (min-width: 768px) {
+  .account__list-state-item {
+    margin: 0;
+  }
+}
+.account__list-state-item img {
+  width: 17px;
+  height: 17px;
+  margin-right: 0.75rem;
+  display: none;
+}
+@media (min-width: 768px) {
+  .account__list-state-item img {
+    display: block;
+  }
+}
+.account__list-state-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .account__list-state-info {
+    align-items: flex-start;
+  }
+}
+.account__list-state-info strong {
+  font-size: 1rem;
+}
+.account__exchange-info {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  padding: 0.75rem 1.25rem 0.75rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.375rem;
+}
+.account__exchange-info-heading {
+  padding: 0.75rem 0 1.25rem;
+}
+.account__exchange-info-main {
+  display: flex;
+  flex-direction: column;
+}
+.account__exchange-info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #E6E7E8;
+  padding: 1.25rem 0;
+}
+@media (min-width: 768px) {
+  .account__exchange-info-item {
+    flex-direction: row;
+  }
+}
+.account__exchange-info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 1rem;
+}
+@media (min-width: 992px) {
+  .account__exchange-info-content {
+    flex-direction: row;
+    text-align-last: left;
+  }
+}
+.account__exchange-info-content img {
+  margin-right: 0.5rem;
+}
+.account__exchange-info-content .first,
+.account__exchange-info-content .third {
+  height: 24px;
+}
+.account__exchange-info-content .second {
+  width: 14px;
+  height: 14px;
+}
+.account__exchange-info-content a {
+  color: #29255e;
+  font-weight: 700;
+}
+.account__exchange-info-method {
+  display: flex;
+  align-items: center;
+}
+.account__exchange-info-detail {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 992px) {
+  .account__exchange-info-detail {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .account__exchange-info-detail {
+    margin-bottom: 0;
+  }
+}
+.account__exchange-info-detail span {
+  font-size: 11px;
+}
+.account__exchange-info-state {
+  display: flex;
+  color: #fff;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  width: 175px;
+  justify-content: center;
+}
+.account__exchange-info-state--awaiting {
+  background-color: #f37021;
+}
+.account__exchange-info-state--time-out {
+  background-color: #ed1c24;
+}
+.account__exchange-info-state--completed {
+  background-color: #2cb34a;
+}
+.account__exchange-info-state--processing {
+  background-color: #0095da;
+}
+.account__exchange-info-state img {
+  width: 12px;
+  height: 12px;
+  margin-right: 0.375rem;
+}
+.account__exchange-info-paginate {
+  display: flex;
+  margin-top: 0.75rem;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .account__exchange-info-paginate {
+    justify-content: flex-start;
+  }
+}
+.account__exchange-info-paginate a {
+  font-weight: 500;
+  color: #58595B;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+.account__exchange-info a.account__exchange-info-page {
+  border: 1px solid transparent;
+}
+.account__exchange-info a.account__exchange-info-page:hover {
+  border-color: #abacad;
+}
+.account__exchange-info-next {
+  text-align-last: left;
+  margin-left: 0.25rem;
+}
+.account__exchange-info-next img {
+  width: 8px;
+}
+
+.daterangepicker {
+  filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.5));
+  border-radius: 0.375rem;
+  border: none;
+}
+.daterangepicker::before {
+  top: -8px;
+  transform: rotate(-45deg);
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: #fff;
+  border-top-right-radius: 15%;
+  border: none;
+  left: 30px !important;
+}
+.daterangepicker::after {
+  display: none;
+}
+
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+  width: 27px;
+  min-width: 27px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 11px;
+}
+
+.daterangepicker .calendar-table th {
+  font-weight: 700;
+}
+
+.daterangepicker td.start-date.end-date {
+  border-radius: 0;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover,
+.daterangepicker td.available:hover {
+  background-color: #7e7c9f;
+  color: inherit;
+  border-radius: 0;
+}
+
+.daterangepicker td.in-range,
+.daterangepicker th.available:hover {
+  background-color: #d4d3df;
+  color: inherit;
+  border-radius: 0;
+}
+
+.daterangepicker select.monthselect,
+.daterangepicker select.yearselect {
+  color: inherit;
+  border-radius: 0.25rem;
+  border-color: #58595B;
+  font-size: 13px;
+}
+.daterangepicker select.monthselect:hover,
+.daterangepicker select.yearselect:hover {
+  border-color: #58595B;
+}
+.daterangepicker select.monthselect:focus-visible,
+.daterangepicker select.yearselect:focus-visible {
+  outline: none;
+}
+
+.daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span {
+  border-color: #58595B;
+}
+
+.daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span {
+  border-width: 0 1px 1px 0;
+}
+
+.daterangepicker select.monthselect, .daterangepicker select.yearselect {
+  height: 21px;
+  line-height: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 0.375rem;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAYAAACXDi8zAAAACXBIWXMAAAsSAAALEgHS3X78AAAAbElEQVQI13XPwQmDQBRF0fPFAtJJLGHKcGKKsgjRbUqYEpJO7GCySAZE8MLfXD6896LWCvLjeYNtXXboDrKgtIcY89Tk3Y8PUo8Br/81hmgZZzoXxJinhHTypccb8yl8jlrrsS6kbV32uBr4BfY1Jt1+Y0IMAAAAAElFTkSuQmCC");
+  background-position: calc(100% - 4px) 5px;
+  background-size: 6px 10px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.daterangepicker select.monthselect {
+  margin-right: 0.25rem;
+}
+
+.create-your-account-page {
+  background-color: #f1f2f2;
+}
+
+.create-your-account {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .create-your-account {
+    height: auto;
+  }
+}
+.create-your-account__grid {
+  justify-content: center;
+  margin: 2.5rem auto 4rem;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .create-your-account__grid {
+    margin: 2.5rem 1.5rem 4rem;
+  }
+}
+.create-your-account__card {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 0.375rem;
+  background-color: #fff;
+}
+@media (min-width: 576px) {
+  .create-your-account__card {
+    padding: 2rem 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .create-your-account__card {
+    padding: 2rem 9rem;
+  }
+}
+.create-your-account__header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.create-your-account__header a {
+  color: #58595B;
+  font-weight: 500;
+}
+.create-your-account__headline {
+  font-size: 20px;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+@media (min-width: 768px) {
+  .create-your-account__headline {
+    font-size: 28px;
+  }
+}
+.create-your-account__main label {
+  margin-bottom: 0.25rem;
+}
+.create-your-account__input-group {
+  margin-bottom: 1rem;
+}
+.create-your-account__input-group input {
+  color: inherit;
+}
+.create-your-account__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .create-your-account__footer {
+    flex-direction: row;
+  }
+}
+.create-your-account__footer a {
+  font-weight: 500;
+  color: #58595B;
+}
+.create-your-account__footer button {
+  background: linear-gradient(90deg, #2d348a 0%, #315eaa 36.67%, #3471b8 73.59%, #359fd8 100%);
+  color: #fff;
+  border-radius: 0.375rem;
+  border: none;
+  font-size: inherit;
+  padding: 0.375rem 1.75rem;
+  margin-top: 0.5rem;
+}
+@media (min-width: 576px) {
+  .create-your-account__footer button {
+    margin-top: 0;
+  }
+}
+
+.forgot-password-page {
+  background-color: #f1f2f2;
+}
+
+.forgot-password {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .forgot-password {
+    height: auto;
+  }
+}
+.forgot-password__grid {
+  justify-content: center;
+  margin: 2.5rem auto;
+  width: 100%;
+}
+.forgot-password__card {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 0.375rem;
+  background-color: #fff;
+}
+@media (min-width: 576px) {
+  .forgot-password__card {
+    padding: 2rem 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .forgot-password__card {
+    padding: 3rem 9rem 3.5rem;
+  }
+}
+.forgot-password__header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.forgot-password__header p {
+  text-align: left;
+  color: #29255e;
+}
+.forgot-password__header span {
+  display: block;
+}
+.forgot-password__header img {
+  width: 10px;
+  height: 10px;
+}
+.forgot-password__headline {
+  font-size: 20px;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+@media (min-width: 768px) {
+  .forgot-password__headline {
+    font-size: 28px;
+  }
+}
+.forgot-password__main label {
+  margin-bottom: 0.25rem;
+}
+.forgot-password__input-group {
+  margin-bottom: 1.5rem;
+}
+.forgot-password__input-group input {
+  color: inherit;
+}
+.forgot-password__footer {
+  display: flex;
+  justify-content: center;
+}
+.forgot-password__footer button {
+  background: linear-gradient(90deg, #2d348a 0%, #315eaa 36.67%, #3471b8 73.59%, #359fd8 100%);
+  color: #fff;
+  border-radius: 0.375rem;
+  border: none;
+  font-size: inherit;
+  padding: 0.375rem 2.25rem;
+}
+
+.login-page {
+  background-color: #f1f2f2;
+}
+
+.login {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .login {
+    height: auto;
+  }
+}
+.login__grid {
+  justify-content: center;
+  margin: 2.5rem auto 4rem;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .login__grid {
+    margin: 2.5rem 4.5rem 2.5rem;
+  }
+}
+.login__card {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 0.375rem;
+  background-color: #fff;
+}
+@media (min-width: 576px) {
+  .login__card {
+    padding: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .login__card {
+    padding: 2rem 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .login__card {
+    padding: 2rem 10.75rem;
+  }
+}
+.login__recaptcha {
+  margin: 0.5rem 0 1.5rem;
+}
+.login__header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.login__header a {
+  color: #58595B;
+  font-weight: 500;
+}
+.login__headline {
+  font-size: 20px;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+@media (min-width: 768px) {
+  .login__headline {
+    font-size: 28px;
+  }
+}
+.login__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login__main label {
+  margin-bottom: 0.25rem;
+}
+.login__input-group {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.login__input-group input {
+  color: inherit;
+}
+.login__footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.login__footer a {
+  font-weight: 500;
+  color: #58595B;
+}
+.login__footer button {
+  background: linear-gradient(90deg, #2d348a 0%, #315eaa 36.67%, #3471b8 73.59%, #359fd8 100%);
+  color: #fff;
+  border-radius: 0.375rem;
+  border: none;
+  font-size: inherit;
+  padding: 0.375rem 2.5rem;
+  margin-top: 0.5rem;
+}
+@media (min-width: 576px) {
+  .login__footer button {
+    margin-top: 0;
+  }
+}
+.login__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+@media (min-width: 576px) {
+  .login__action {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.login__remember {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.login__remember input {
+  width: 1rem;
+  margin-right: 0.25rem;
+}
+.login__remember input:focus {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */

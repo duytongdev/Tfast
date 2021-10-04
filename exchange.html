@@ -17,7 +17,7 @@
                     <img src="images/user-circle.svg" alt="">
                     <span>Create Account</span>
                 </a>
-                <a href="#" class="top-nav__link">
+                <a href="#" class="top-nav__link">                                                      
                     <img src="images/sign-in.svg" alt="">
                     <span>Login</span>
                 </a>
@@ -29,13 +29,13 @@
             </a>
             <nav class="main-nav">
                 <label for="nav-mobile" class="main-nav__toggle">
-                    <img src="images/times.svg" alt="">
+                    <img src="images/bars.svg" alt="">
                 </label>
                 <input type="checkbox" id="nav-mobile" class="main-nav__checkbox" hidden>
                 <label for="nav-mobile" class="main-nav__overlay"></label>
                 <ul class="main-nav__list">
                     <label for="nav-mobile" class="main-nav__close">
-                        <img src="images/bars.svg" alt="">
+                        <img src="images/times.svg" alt="">
                     </label>
                     <li class="main-nav__item">
                         <a href="exchange.html">Exchange</a>
@@ -53,10 +53,17 @@
                         <a href="#">Contact us</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#">
-                            <span>EN</span>
-                            <img src="images/sort-down.svg" alt="">
-                        </a>
+                        <label for="language-switcher" class="main-nav__dropdown-toggle">
+                            <span>
+                                <span>EN</span>
+                                <img src="images/sort-down.svg" alt="">
+                            </span>
+                        </label>
+                        <input type="checkbox" id="language-switcher" class="main-nav__dropdown-checkbox" hidden>
+                        <div class="main-nav__dropdown">
+                            <a href="">English</a>
+                            <a href="">Tiếng Việt</a>
+                        </div>
                     </li>
                 </ul>
             </nav>

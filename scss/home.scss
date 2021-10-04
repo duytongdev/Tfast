@@ -9,6 +9,9 @@ body {
     font-size: $font-size-base;
     font-weight: 400;
     color: #58595B;
+    height: 100vh;
+    display:flex; 
+    flex-direction:column; 
 }
 
 ul {
@@ -817,8 +820,9 @@ footer {
     background-color: #29255e;
     color: #fff;
     text-align: center;
-    padding: .5rem;
+    padding: 7px;
     font-size: 14px;
+    margin-top: auto;
 }
 
 .swiper {
